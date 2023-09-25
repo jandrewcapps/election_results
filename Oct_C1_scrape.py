@@ -19,7 +19,7 @@ xmlparse = xml.dom.minidom.parse('yJCDurb0Q3XeVDIjkqBUtLCDl38FFtCYJVcGfM14.xml')
 # print('here')
 Race = xmlparse.getElementsByTagName("Race")
 
-cols = ["Broussard", "Hardy", "Harrison", "Matthieu_Robichaux", "Total", "Winner_num", "Winner_name"]
+cols = ["Candidate", "Votes"]
 rows = []
 
 Broussard=Hardy=Harrison=Matthieu_Robichaux=TotalVotes=0
@@ -49,58 +49,16 @@ for x in Race:
                 case '119667': #--UPDATED-- for Matthieu-Robichaux on 9/25/23
                 	Matthieu_Robichaux = Matthieu_Robichaux + int(Votes)
         TotalVotes = TotalVotes + Broussard + Hardy + Harrison + Matthieu_Robichaux       
-        #Gather precinct vote totals for each candidate
+        #Gather precinct vote totals for each candidate 
 
-
-Winner_name = ""
-Winner_num = 0
-if TotalVotes > 0:
-    if Broussard > WinVote:
-        WinVote = Broussard
-        Winner_num = 1
-        Winner_name = "Broussard"
-    if Hardy > WinVote:
-        WinVote = Hardy
-        Winner_num = 2
-        Winner_name = "Hardy"
-    if Harrison > WinVote:
-        WinVote = Harrison
-        Winner_num = 3
-        Winner_name = "Harrison"
-    if Matthieu_Robichaux > WinVote:
-        WinVote = Matthieu_Robichaux
-        Winner_num = 4
-        Winner_name = "Matthieu_Robichaux"
-    if WinVote == Broussard:
-        if Broussard == Hardy:
-            Winner_num = 0
-            Winner_name = "Tie"
-        if Broussard == Harrison:
-            Winner_num = 0
-            Winner_name = "Tie"
-        if Broussard == Matthieu_Robichaux:
-        	Winner_num = 0
-        	Winner_name = "Tie"
-    if WinVote == Hardy:
-        if Hardy == Harrison:
-            Winner_num = 0
-            Winner_name = "Tie" 
-        if Hardy == Matthieu_Robichaux:
-            Winner_num = 0
-            Winner_name = "Tie"
-    if WinVote == Harrison:
-        if Harrison == Matthieu_Robichaux:
-        	Winner_num = 0
-        	Winner_name = "Tie"               
-    #Determine each precinct winner and identify potential tie cases    
-
-rows.append({"Broussard": Broussard,
-        "Hardy": Hardy,
-        "Harrison": Harrison, 
-        "Matthieu_Robichaux": Matthieu_Robichaux,
-        "Total": TotalVotes,
-        "Winner_num": Winner_num,
-        "Winner_name": Winner_name})
+rows.append({"Candidate": "Broussard",
+        "Votes": Broussard})        
+rows.append({"Candidate": "Hardy",
+        "Votes": Hardy})
+rows.append({"Candidate": "Harrison",
+        "Votes": Harrison})
+rows.append({"Candidate": "Matthieu-Robichaux",
+        "Votes": Matthieu_Robichaux})
 #Add total result to array
                 
 Oct_C1_df = pd.DataFrame(rows, columns=cols)
