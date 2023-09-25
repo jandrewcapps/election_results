@@ -44,6 +44,10 @@ for x in Race:
         WinVote = 0
         Winner_name = ""
         Winner_num = 0
+        
+        if TotalVotes == 0:
+        	Winner_name = "Results pending"
+
         if TotalVotes > 0:
             if Boulet > WinVote:
                 WinVote = Boulet
@@ -67,7 +71,7 @@ for x in Race:
             if WinVote == Guillory:
                 if Guillory == Swift:
                     Winner_num = 0
-                    Winner_name = "Tie"                
+                    Winner_name = "Tie"               
         #Determine each precinct winner and identify potential tie cases    
 
         rows.append({"ID": ID,
