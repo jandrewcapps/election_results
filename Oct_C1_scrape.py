@@ -13,7 +13,7 @@ Race = xmlparse.getElementsByTagName("Race")
 cols = ["Candidate", "Votes"]
 rows = []
 
-Broussard=Hardy=Harrison=Matthieu_Robichaux=TotalVotes=0
+Broussard = Hardy = Harrison = Matthieu_Robichaux = TotalVotes = 0
 
 for x in Race:
     ID = x.getAttribute("ID")
