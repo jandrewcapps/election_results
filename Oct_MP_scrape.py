@@ -5,15 +5,16 @@ import xml.dom.minidom
 import requests
 
 
-URL = "https://voterportal.sos.la.gov/api/MediaRequests/PrecinctVotes/2022-11-08/fmy5i4ikXTSxn2XaK5oB/yJCDurb0Q3XeVDIjkqBUtLCDl38FFtCYJVcGfM14"
+URL = "https://voterportal.sos.la.gov/api/MediaRequests/PrecinctVotes/2023-10-14/fmy5i4ikXTSxn2XaK5oB/yJCDurb0Q3XeVDIjkqBUtLCDl38FFtCYJVcGfM14"
+#--UPDATED-- for 10/14/23 election on 9/25/23
 
 response = requests.get(URL)
-with open('yJCDurb0Q3XeVDIjkqBUtLCDl38FFtCYJVcGfM14.xml', 'wb') as file:
+with open('yJCDurb0Q3XeVDIjkqBUtLCDl38FFtCYJVcGfM14.xml', 'wb') as file: #--UPDATED-- 9/25/23
     file.write(response.content)
 
   
 # Parsing the XML file
-xmlparse = xml.dom.minidom.parse('yJCDurb0Q3XeVDIjkqBUtLCDl38FFtCYJVcGfM14.xml')
+xmlparse = xml.dom.minidom.parse('yJCDurb0Q3XeVDIjkqBUtLCDl38FFtCYJVcGfM14.xml') #--UPDATED-- 9/25/23
 # root = xmlparse.getroot()
 # print('here')
 Race = xmlparse.getElementsByTagName("Race")
@@ -24,7 +25,7 @@ rows = []
 
 for x in Race:
     ID = x.getAttribute("ID")
-    if ID == '62013': #update with race ID for Oct. MP
+    if ID == '64007': # --UPDATED-- with race ID for Oct. MP on 9/25/23
         ID = 'Lafayette Mayor-President'
         Parish = x.getAttribute("Parish")
         Ward = x.getAttribute("Ward")
@@ -40,17 +41,18 @@ for x in Race:
             Votes = a.getAttribute("VoteTotal")
             if Votes == "": Votes = 0
             match CID:
-                case '117190': #Update for Boulet
+                case '118969': #--UPDATED-- for Boulet on 9/25/23
                     Boulet = int(Votes)
-                case '116147': #Update for Guillory
+                case '119045': #--UPDATED-- for Guillory on 9/25/23
                     Guillory = int(Votes)
-                case '117724': #Update for Swift
+                case '119494': #--UPDATED-- for Swift on 9/25/23
                     Swift = int(Votes)
         TotalVotes = Boulet+Guillory+Swift        
         #Gather precinct vote totals for each candidate
         
         WinVote = 0
         Winner_name = ""
+        Winner_num = 0
         if TotalVotes > 0:
             if Boulet > WinVote:
                 WinVote = Boulet
