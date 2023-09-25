@@ -19,9 +19,10 @@ xmlparse = xml.dom.minidom.parse('yJCDurb0Q3XeVDIjkqBUtLCDl38FFtCYJVcGfM14.xml')
 # print('here')
 Race = xmlparse.getElementsByTagName("Race")
 
-cols = ["ID", "Parish", "Ward", "Precinct", "Broussard", "Hardy",
-                "Harrison", "Matthieu_Robichaux", "Total", "Winner_num", "Winner_name"]
+cols = ["Broussard", "Hardy", "Harrison", "Matthieu_Robichaux", "Total", "Winner_num", "Winner_name"]
 rows = []
+
+Broussard=Hardy=Harrison=Matthieu_Robichaux=TotalVotes=0
 
 for x in Race:
     ID = x.getAttribute("ID")
@@ -32,8 +33,6 @@ for x in Race:
         Precinct = x.getAttribute("Precinct")
         #Gather precinct & race ID info
         
-        Broussard=Hardy=Harrison=Matthieu_Robichaux=0
-
         Choice = x.getElementsByTagName("Choice") #'Choice' is SoS for candidate/ballot option
         for a in Choice:
             CID = a.getAttribute("ID")
@@ -42,71 +41,67 @@ for x in Race:
             if Votes == "": Votes = 0
             match CID:
                 case '118764': #--UPDATED-- for Broussard on 9/25/23
-                    Broussard = int(Votes)
+                    Broussard = Broussard + int(Votes)
                 case '118990': #--UPDATED-- for Hardy on 9/25/23
-                    Hardy = int(Votes)
+                    Hardy = Hardy + int(Votes)
                 case '118719': #--UPDATED-- for Harrison on 9/25/23
-                    Harrison = int(Votes)
+                    Harrison = Harrison + int(Votes)
                 case '119667': #--UPDATED-- for Matthieu-Robichaux on 9/25/23
-                	Matthieu_Robichaux = int(Votes)
-        TotalVotes = Broussard + Hardy + Harrison + Matthieu_Robichaux       
+                	Matthieu_Robichaux = Matthieu_Robichaux + int(Votes)
+        TotalVotes = TotalVotes + Broussard + Hardy + Harrison + Matthieu_Robichaux       
         #Gather precinct vote totals for each candidate
-        
-        WinVote = 0
-        Winner_name = ""
-        Winner_num = 0
-        if TotalVotes > 0:
-            if Broussard > WinVote:
-                WinVote = Broussard
-                Winner_num = 1
-                Winner_name = "Broussard"
-            if Hardy > WinVote:
-                WinVote = Hardy
-                Winner_num = 2
-                Winner_name = "Hardy"
-            if Harrison > WinVote:
-                WinVote = Harrison
-                Winner_num = 3
-                Winner_name = "Harrison"
-            if Matthieu_Robichaux > WinVote:
-                WinVote = Matthieu_Robichaux
-                Winner_num = 4
-                Winner_name = "Matthieu_Robichaux"
-            if WinVote == Broussard:
-                if Broussard == Hardy:
-                    Winner_num = 0
-                    Winner_name = "Tie"
-                if Broussard == Harrison:
-                    Winner_num = 0
-                    Winner_name = "Tie"
-                if Broussard == Matthieu_Robichaux:
-                	Winner_num = 0
-                	Winner_name = "Tie"
-            if WinVote == Hardy:
-                if Hardy == Harrison:
-                    Winner_num = 0
-                    Winner_name = "Tie" 
-                if Hardy == Matthieu_Robichaux:
-                	Winner_num = 0
-                	Winner_name = "Tie"
-            if WinVote == Harrison:
-            	if Harrison == Matthieu_Robichaux:
-            		Winner_num = 0
-            		Winner_name = "Tie"               
-        #Determine each precinct winner and identify potential tie cases    
 
-        rows.append({"ID": ID,
-                "Parish": Parish,
-                "Ward": Ward,
-                "Precinct": Precinct,
-                "Broussard": Broussard,
-                "Hardy": Hardy,
-                "Harrison": Harrison, 
-                "Matthieu_Robichaux": Matthieu_Robichaux,
-                "Total": TotalVotes,
-                "Winner_num": Winner_num,
-                "Winner_name": Winner_name})
-        #Add precinct result to array
+
+Winner_name = ""
+Winner_num = 0
+if TotalVotes > 0:
+    if Broussard > WinVote:
+        WinVote = Broussard
+        Winner_num = 1
+        Winner_name = "Broussard"
+    if Hardy > WinVote:
+        WinVote = Hardy
+        Winner_num = 2
+        Winner_name = "Hardy"
+    if Harrison > WinVote:
+        WinVote = Harrison
+        Winner_num = 3
+        Winner_name = "Harrison"
+    if Matthieu_Robichaux > WinVote:
+        WinVote = Matthieu_Robichaux
+        Winner_num = 4
+        Winner_name = "Matthieu_Robichaux"
+    if WinVote == Broussard:
+        if Broussard == Hardy:
+            Winner_num = 0
+            Winner_name = "Tie"
+        if Broussard == Harrison:
+            Winner_num = 0
+            Winner_name = "Tie"
+        if Broussard == Matthieu_Robichaux:
+        	Winner_num = 0
+        	Winner_name = "Tie"
+    if WinVote == Hardy:
+        if Hardy == Harrison:
+            Winner_num = 0
+            Winner_name = "Tie" 
+        if Hardy == Matthieu_Robichaux:
+            Winner_num = 0
+            Winner_name = "Tie"
+    if WinVote == Harrison:
+        if Harrison == Matthieu_Robichaux:
+        	Winner_num = 0
+        	Winner_name = "Tie"               
+    #Determine each precinct winner and identify potential tie cases    
+
+rows.append({"Broussard": Broussard,
+        "Hardy": Hardy,
+        "Harrison": Harrison, 
+        "Matthieu_Robichaux": Matthieu_Robichaux,
+        "Total": TotalVotes,
+        "Winner_num": Winner_num,
+        "Winner_name": Winner_name})
+#Add total result to array
                 
 Oct_C1_df = pd.DataFrame(rows, columns=cols)
 # Writing dataframe to csv
