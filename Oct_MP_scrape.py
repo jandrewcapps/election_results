@@ -21,6 +21,8 @@ for x in Race:
         Parish = x.getAttribute("Parish")
         Ward = x.getAttribute("Ward")
         Precinct = x.getAttribute("Precinct")
+        if Precinct != '':
+        	Precinct = int(Precinct)
         #Gather precinct & race ID info
         
         Boulet=Guillory=Swift=0
