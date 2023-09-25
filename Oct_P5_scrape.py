@@ -36,7 +36,7 @@ for x in Race:
                 case '119263': #--UPDATED-- for Rubin on 9/25/23
                     Rubin = Rubin + int(Votes)
                 case '119614': #--UPDATED-- for Williams on 9/25/23
-                    Rubin = Rubin + int(Votes)
+                    William = Williams + int(Votes)
         TotalVotes = TotalVotes + Gabriel + Rubin + Williams
         #Gather precinct vote totals for each candidate 
 

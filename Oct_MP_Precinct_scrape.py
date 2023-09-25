@@ -14,8 +14,6 @@ cols = ["ID", "Parish", "Ward", "Precinct", "Boulet", "Guillory",
                 "Swift", "Total", "Winner_num", "Winner_name"]
 rows = []
 
-All_MB = All_JG = All_JS = All_votes = 0
-
 for x in Race:
     ID = x.getAttribute("ID")
     if ID == '64007': # --UPDATED-- with race ID for Oct. MP on 9/25/23
@@ -38,13 +36,10 @@ for x in Race:
             match CID:
                 case '118969': #--UPDATED-- for Boulet on 9/25/23
                     Boulet = int(Votes)
-                    All_MB += Boulet
                 case '119045': #--UPDATED-- for Guillory on 9/25/23
                     Guillory = int(Votes)
-                    All_JG += Guillory
                 case '119494': #--UPDATED-- for Swift on 9/25/23
                     Swift = int(Votes)
-                    All_JS += Swift
         TotalVotes = Boulet+Guillory+Swift        
         #Gather precinct vote totals for each candidate
         
@@ -92,22 +87,8 @@ for x in Race:
                 "Winner_num": Winner_num,
                 "Winner_name": Winner_name})
         #Add precinct result to array
-
-All_votes = All_MB + All_JG + All_JS
-
-rows.append({"ID": "total",
-        "Parish": "lafayette",
-        "Ward": "none",
-        "Precinct": "all",
-        "Boulet": All_MB,
-        "Guillory": All_JG,
-        "Swift": All_JS,
-        "Total": All_votes,
-        "Winner_num": 0,
-        "Winner_name": "-"})
-#Add total results as final row 
                 
 Oct_MP_df = pd.DataFrame(rows, columns=cols)
 # Writing dataframe to csv
-Oct_MP_df.to_csv('Oct_MP_results.csv')
+Oct_MP_df.to_csv('Oct_MP_Precinct_results.csv')
 

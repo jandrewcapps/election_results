@@ -18,7 +18,8 @@ response = requests.get(URL)
 with open('sos_download.xml', 'wb') as file: #--UPDATED-- 9/25/23
     file.write(response.content)
 
-os.system('python3 Oct_MP_scrape.py')
+os.system('python3 Oct_MP_Precinct_scrape.py')
+os.system('python3 Oct_MP_Totals_scrape.py')
 os.system('python3 Oct_C1_scrape.py')
 os.system('python3 Oct_C2_scrape.py')
 os.system('python3 Oct_C4_scrape.py')

@@ -13,12 +13,12 @@ Race = xmlparse.getElementsByTagName("Race")
 cols = ["Candidate", "Votes"]
 rows = []
 
-Hughes = Monts = Stansbury = TotalVotes = 0
+Boulet = Guillory = Swift = TotalVotes = 0
 
 for x in Race:
     ID = x.getAttribute("ID")
-    if ID == '64021': # --UPDATED-- with race ID for Oct. P2 on 9/25/23
-        ID = 'Parish Council D-3'
+    if ID == '64007': # --UPDATED-- with race ID for Oct. MP on 9/25/23
+        ID = 'Lafayette Mayor-President'
         Parish = x.getAttribute("Parish")
         Ward = x.getAttribute("Ward")
         Precinct = x.getAttribute("Precinct")
@@ -31,24 +31,24 @@ for x in Race:
             Votes = a.getAttribute("VoteTotal")
             if Votes == "": Votes = 0
             match CID:
-                case '120102': #--UPDATED-- for Hughes on 9/25/23
-                    Hughes = Hughes + int(Votes)
-                case '120051': #--UPDATED-- for Monts on 9/25/23
-                    Monts = Monts + int(Votes)
-                case '118701': #--UPDATED-- for Stansbury on 9/25/23
-                    Stansbury = Stansbury + int(Votes)
-        TotalVotes = TotalVotes + Hughes + Monts + Stansbury
+                case '118969': #--UPDATED-- for Boulet on 9/25/23
+                    Boulet = Boulet + int(Votes)
+                case '119045': #--UPDATED-- for Guillory on 9/25/23
+                    Guillory = Guillory + int(Votes)
+                case '119494': #--UPDATED-- for Swift on 9/25/23
+                    Swift = Swift + int(Votes)
+        TotalVotes = TotalVotes + Boulet + Guillory + Swift
         #Gather precinct vote totals for each candidate 
 
-rows.append({"Candidate": "Hughes",
-        "Votes": Hughes})        
-rows.append({"Candidate": "Monts",
-        "Votes": Monts})
-rows.append({"Candidate": "Stansbury",
-        "Votes": Stansbury})
+rows.append({"Candidate": "Boulet",
+        "Votes": Boulet})        
+rows.append({"Candidate": "Guillory",
+        "Votes": Guillory})
+rows.append({"Candidate": "Swift",
+        "Votes": Swift})
 #Add total result to array
                 
-Oct_P3_df = pd.DataFrame(rows, columns=cols)
+Oct_MP_df = pd.DataFrame(rows, columns=cols)
 # Writing dataframe to csv
-Oct_P3_df.to_csv('Oct_P3_results.csv')
+Oct_MP_df.to_csv('Oct_MP_Totals_results.csv')
 
