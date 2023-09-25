@@ -5,7 +5,7 @@ import xml.dom.minidom
 import requests
 
 # Parsing previously downloaded XML file
-xmlparse = xml.dom.minidom.parse('yJCDurb0Q3XeVDIjkqBUtLCDl38FFtCYJVcGfM14.xml') #--UPDATED-- 9/25/23
+xmlparse = xml.dom.minidom.parse('sos_download.xml') #--UPDATED-- 9/25/23
 # root = xmlparse.getroot()
 # print('here')
 Race = xmlparse.getElementsByTagName("Race")
