@@ -1,573 +1,136 @@
 ,ID,Parish,Ward,Precinct,Boulet,Guillory,Swift,Total,Winner_num,Winner_name
-0,Lafayette Mayor-President,01,01,01,441,34,17,492,1,Monique Blanco Boulet
-1,Lafayette Mayor-President,01,01,02,324,50,26,400,1,Monique Blanco Boulet
-2,Lafayette Mayor-President,01,01,03,341,47,23,411,1,Monique Blanco Boulet
-3,Lafayette Mayor-President,01,01,04,413,65,30,508,1,Monique Blanco Boulet
-4,Lafayette Mayor-President,01,01,05,80,8,30,118,1,Monique Blanco Boulet
-5,Lafayette Mayor-President,01,01,06,61,35,124,220,3,Jan Swift
-6,Lafayette Mayor-President,01,01,07,275,30,6,311,1,Monique Blanco Boulet
-7,Lafayette Mayor-President,01,01,08,295,20,17,332,1,Monique Blanco Boulet
-8,Lafayette Mayor-President,01,02,01,472,43,15,530,1,Monique Blanco Boulet
-9,Lafayette Mayor-President,01,02,02,404,15,5,424,1,Monique Blanco Boulet
-10,Lafayette Mayor-President,01,02,03,372,45,14,431,1,Monique Blanco Boulet
-11,Lafayette Mayor-President,01,02,04,65,3,0,68,1,Monique Blanco Boulet
-12,Lafayette Mayor-President,01,02,05,275,26,9,310,1,Monique Blanco Boulet
-13,Lafayette Mayor-President,01,03,01,145,27,27,199,1,Monique Blanco Boulet
-14,Lafayette Mayor-President,01,03,02,386,25,6,417,1,Monique Blanco Boulet
-15,Lafayette Mayor-President,01,03,03,453,72,38,563,1,Monique Blanco Boulet
-16,Lafayette Mayor-President,01,03,04,188,40,94,322,1,Monique Blanco Boulet
-17,Lafayette Mayor-President,01,03,05,262,26,22,310,1,Monique Blanco Boulet
-18,Lafayette Mayor-President,01,03,07,367,27,13,407,1,Monique Blanco Boulet
-19,Lafayette Mayor-President,01,04,01,265,23,7,295,1,Monique Blanco Boulet
-20,Lafayette Mayor-President,01,04,02,318,31,16,365,1,Monique Blanco Boulet
-21,Lafayette Mayor-President,01,04,03,30,2,0,32,1,Monique Blanco Boulet
-22,Lafayette Mayor-President,01,04,04,574,35,11,620,1,Monique Blanco Boulet
-23,Lafayette Mayor-President,01,04,05,342,21,8,371,1,Monique Blanco Boulet
-24,Lafayette Mayor-President,01,04,06,362,23,14,399,1,Monique Blanco Boulet
-25,Lafayette Mayor-President,01,05,01,131,11,4,146,1,Monique Blanco Boulet
-26,Lafayette Mayor-President,01,05,02,176,15,9,200,1,Monique Blanco Boulet
-27,Lafayette Mayor-President,01,05,03,303,13,3,319,1,Monique Blanco Boulet
-28,Lafayette Mayor-President,01,05,04,187,18,7,212,1,Monique Blanco Boulet
-29,Lafayette Mayor-President,01,05,05,72,8,6,86,1,Monique Blanco Boulet
-30,Lafayette Mayor-President,01,06,01,60,21,53,134,1,Monique Blanco Boulet
-31,Lafayette Mayor-President,01,06,02,94,14,6,114,1,Monique Blanco Boulet
-32,Lafayette Mayor-President,01,06,03,123,23,32,178,1,Monique Blanco Boulet
-33,Lafayette Mayor-President,01,06,04,202,34,38,274,1,Monique Blanco Boulet
-34,Lafayette Mayor-President,01,06,05,154,22,11,187,1,Monique Blanco Boulet
-35,Lafayette Mayor-President,01,06,06,13,13,93,119,3,Jan Swift
-36,Lafayette Mayor-President,01,06,07,246,16,11,273,1,Monique Blanco Boulet
-37,Lafayette Mayor-President,01,06,08,227,20,14,261,1,Monique Blanco Boulet
-38,Lafayette Mayor-President,01,06,10,128,11,3,142,1,Monique Blanco Boulet
-39,Lafayette Mayor-President,01,06,12,243,19,22,284,1,Monique Blanco Boulet
-40,Lafayette Mayor-President,01,06,13,109,14,0,123,1,Monique Blanco Boulet
-41,Lafayette Mayor-President,01,06,14,246,20,9,275,1,Monique Blanco Boulet
-42,Lafayette Mayor-President,01,06,15,85,12,6,103,1,Monique Blanco Boulet
-43,Lafayette Mayor-President,01,06,16,125,10,11,146,1,Monique Blanco Boulet
-44,Lafayette Mayor-President,01,07,02,294,31,11,336,1,Monique Blanco Boulet
-45,Lafayette Mayor-President,01,07,03,508,40,5,553,1,Monique Blanco Boulet
-46,Lafayette Mayor-President,01,07,04,394,22,13,429,1,Monique Blanco Boulet
-47,Lafayette Mayor-President,01,Early Voting,,3342,373,402,4117,1,Monique Blanco Boulet
-48,Lafayette Mayor-President,01,Provisional Votes,,0,0,0,0,1,
-49,Lafayette Mayor-President,10,00,160E,269,29,17,315,1,Monique Blanco Boulet
-50,Lafayette Mayor-President,10,00,160W,204,32,12,248,1,Monique Blanco Boulet
-51,Lafayette Mayor-President,10,00,161,237,29,6,272,1,Monique Blanco Boulet
-52,Lafayette Mayor-President,10,00,162E,452,59,25,536,1,Monique Blanco Boulet
-53,Lafayette Mayor-President,10,00,162W,361,56,17,434,1,Monique Blanco Boulet
-54,Lafayette Mayor-President,10,00,163,394,41,29,464,1,Monique Blanco Boulet
-55,Lafayette Mayor-President,10,00,164,206,23,9,238,1,Monique Blanco Boulet
-56,Lafayette Mayor-President,10,00,165,363,51,27,441,1,Monique Blanco Boulet
-57,Lafayette Mayor-President,10,00,166E,309,40,17,366,1,Monique Blanco Boulet
-58,Lafayette Mayor-President,10,00,166W,268,38,35,341,1,Monique Blanco Boulet
-59,Lafayette Mayor-President,10,00,167,269,49,28,346,1,Monique Blanco Boulet
-60,Lafayette Mayor-President,10,00,260,479,65,26,570,1,Monique Blanco Boulet
-61,Lafayette Mayor-President,10,00,261,179,18,3,200,1,Monique Blanco Boulet
-62,Lafayette Mayor-President,10,00,262,194,24,9,227,1,Monique Blanco Boulet
-63,Lafayette Mayor-President,10,00,300,19,18,167,204,3,Jan Swift
-64,Lafayette Mayor-President,10,00,301,21,21,150,192,3,Jan Swift
-65,Lafayette Mayor-President,10,00,302,28,10,23,61,1,Monique Blanco Boulet
-66,Lafayette Mayor-President,10,00,303,6,3,74,83,3,Jan Swift
-67,Lafayette Mayor-President,10,00,304,23,8,84,115,3,Jan Swift
-68,Lafayette Mayor-President,10,00,305,14,20,124,158,3,Jan Swift
-69,Lafayette Mayor-President,10,00,306,290,122,46,458,1,Monique Blanco Boulet
-70,Lafayette Mayor-President,10,00,307,9,1,35,45,3,Jan Swift
-71,Lafayette Mayor-President,10,00,308,13,13,81,107,3,Jan Swift
-72,Lafayette Mayor-President,10,00,309E,2,4,28,34,3,Jan Swift
-73,Lafayette Mayor-President,10,00,309W,13,12,92,117,3,Jan Swift
-74,Lafayette Mayor-President,10,00,310,84,52,54,190,1,Monique Blanco Boulet
-75,Lafayette Mayor-President,10,00,311,13,10,57,80,3,Jan Swift
-76,Lafayette Mayor-President,10,00,312,39,36,172,247,3,Jan Swift
-77,Lafayette Mayor-President,10,00,313E,2,3,3,8,0,Tie
-78,Lafayette Mayor-President,10,00,313W,2,3,43,48,3,Jan Swift
-79,Lafayette Mayor-President,10,00,314,148,61,40,249,1,Monique Blanco Boulet
-80,Lafayette Mayor-President,10,00,315E,25,13,124,162,3,Jan Swift
-81,Lafayette Mayor-President,10,00,315W,85,46,28,159,1,Monique Blanco Boulet
-82,Lafayette Mayor-President,10,00,316E,29,13,18,60,1,Monique Blanco Boulet
-83,Lafayette Mayor-President,10,00,316W,15,3,11,29,1,Monique Blanco Boulet
-84,Lafayette Mayor-President,10,00,317,100,24,52,176,1,Monique Blanco Boulet
-85,Lafayette Mayor-President,10,00,318,71,19,46,136,1,Monique Blanco Boulet
-86,Lafayette Mayor-President,10,00,319N,15,8,24,47,3,Jan Swift
-87,Lafayette Mayor-President,10,00,319S,30,3,23,56,1,Monique Blanco Boulet
-88,Lafayette Mayor-President,10,00,320E,18,11,70,99,3,Jan Swift
-89,Lafayette Mayor-President,10,00,320W,31,12,88,131,3,Jan Swift
-90,Lafayette Mayor-President,10,00,321,30,24,101,155,3,Jan Swift
-91,Lafayette Mayor-President,10,00,322,50,23,113,186,3,Jan Swift
-92,Lafayette Mayor-President,10,00,323,33,18,92,143,3,Jan Swift
-93,Lafayette Mayor-President,10,00,324,21,18,112,151,3,Jan Swift
-94,Lafayette Mayor-President,10,00,325,299,98,33,430,1,Monique Blanco Boulet
-95,Lafayette Mayor-President,10,00,326,250,81,42,373,1,Monique Blanco Boulet
-96,Lafayette Mayor-President,10,00,327,56,14,17,87,1,Monique Blanco Boulet
-97,Lafayette Mayor-President,10,00,328,107,35,132,274,3,Jan Swift
-98,Lafayette Mayor-President,10,00,329,50,19,122,191,3,Jan Swift
-99,Lafayette Mayor-President,10,00,330,20,14,116,150,3,Jan Swift
-100,Lafayette Mayor-President,10,00,331,188,49,22,259,1,Monique Blanco Boulet
-101,Lafayette Mayor-President,10,00,332N,57,10,35,102,1,Monique Blanco Boulet
-102,Lafayette Mayor-President,10,00,332S,50,16,34,100,1,Monique Blanco Boulet
-103,Lafayette Mayor-President,10,00,333,514,153,58,725,1,Monique Blanco Boulet
-104,Lafayette Mayor-President,10,00,334,206,47,36,289,1,Monique Blanco Boulet
-105,Lafayette Mayor-President,10,00,335,141,37,11,189,1,Monique Blanco Boulet
-106,Lafayette Mayor-President,10,00,336,308,83,48,439,1,Monique Blanco Boulet
-107,Lafayette Mayor-President,10,00,337,185,60,21,266,1,Monique Blanco Boulet
-108,Lafayette Mayor-President,10,00,338,204,41,35,280,1,Monique Blanco Boulet
-109,Lafayette Mayor-President,10,00,339,359,100,43,502,1,Monique Blanco Boulet
-110,Lafayette Mayor-President,10,00,340,218,56,56,330,1,Monique Blanco Boulet
-111,Lafayette Mayor-President,10,00,360,117,12,7,136,1,Monique Blanco Boulet
-112,Lafayette Mayor-President,10,00,361,30,16,84,130,3,Jan Swift
-113,Lafayette Mayor-President,10,00,362,279,64,25,368,1,Monique Blanco Boulet
-114,Lafayette Mayor-President,10,00,363,543,154,29,726,1,Monique Blanco Boulet
-115,Lafayette Mayor-President,10,00,364,265,85,161,511,1,Monique Blanco Boulet
-116,Lafayette Mayor-President,10,00,365,555,126,32,713,1,Monique Blanco Boulet
-117,Lafayette Mayor-President,10,00,366,199,43,17,259,1,Monique Blanco Boulet
-118,Lafayette Mayor-President,10,00,367,232,58,13,303,1,Monique Blanco Boulet
-119,Lafayette Mayor-President,10,00,368,524,108,46,678,1,Monique Blanco Boulet
-120,Lafayette Mayor-President,10,00,369,385,87,50,522,1,Monique Blanco Boulet
-121,Lafayette Mayor-President,10,00,370,290,71,73,434,1,Monique Blanco Boulet
-122,Lafayette Mayor-President,10,00,371N,117,34,60,211,1,Monique Blanco Boulet
-123,Lafayette Mayor-President,10,00,371S,393,66,35,494,1,Monique Blanco Boulet
-124,Lafayette Mayor-President,10,00,372,405,62,45,512,1,Monique Blanco Boulet
-125,Lafayette Mayor-President,10,00,400,201,32,15,248,1,Monique Blanco Boulet
-126,Lafayette Mayor-President,10,00,401,191,32,22,245,1,Monique Blanco Boulet
-127,Lafayette Mayor-President,10,00,402,141,24,25,190,1,Monique Blanco Boulet
-128,Lafayette Mayor-President,10,00,403,206,41,28,275,1,Monique Blanco Boulet
-129,Lafayette Mayor-President,10,00,404,358,74,43,475,1,Monique Blanco Boulet
-130,Lafayette Mayor-President,10,00,405,484,77,45,606,1,Monique Blanco Boulet
-131,Lafayette Mayor-President,10,00,406,231,33,24,288,1,Monique Blanco Boulet
-132,Lafayette Mayor-President,10,00,407,214,46,20,280,1,Monique Blanco Boulet
-133,Lafayette Mayor-President,10,00,408,254,39,17,310,1,Monique Blanco Boulet
-134,Lafayette Mayor-President,10,00,440,345,63,56,464,1,Monique Blanco Boulet
-135,Lafayette Mayor-President,10,00,441,226,44,44,314,1,Monique Blanco Boulet
-136,Lafayette Mayor-President,10,00,460E,141,23,10,174,1,Monique Blanco Boulet
-137,Lafayette Mayor-President,10,00,460W,353,37,14,404,1,Monique Blanco Boulet
-138,Lafayette Mayor-President,10,00,461,195,23,26,244,1,Monique Blanco Boulet
-139,Lafayette Mayor-President,10,00,463,482,73,37,592,1,Monique Blanco Boulet
-140,Lafayette Mayor-President,10,00,464,377,52,13,442,1,Monique Blanco Boulet
-141,Lafayette Mayor-President,10,00,465,184,19,6,209,1,Monique Blanco Boulet
-142,Lafayette Mayor-President,10,00,466E,469,47,15,531,1,Monique Blanco Boulet
-143,Lafayette Mayor-President,10,00,466W,517,66,11,594,1,Monique Blanco Boulet
-144,Lafayette Mayor-President,10,00,467,401,65,28,494,1,Monique Blanco Boulet
-145,Lafayette Mayor-President,10,00,468,334,45,16,395,1,Monique Blanco Boulet
-146,Lafayette Mayor-President,10,00,469,274,35,9,318,1,Monique Blanco Boulet
-147,Lafayette Mayor-President,10,00,560,214,21,15,250,1,Monique Blanco Boulet
-148,Lafayette Mayor-President,10,00,561,182,22,8,212,1,Monique Blanco Boulet
-149,Lafayette Mayor-President,10,00,562,111,14,5,130,1,Monique Blanco Boulet
-150,Lafayette Mayor-President,10,00,600,197,35,5,237,1,Monique Blanco Boulet
-151,Lafayette Mayor-President,10,00,601,144,19,7,170,1,Monique Blanco Boulet
-152,Lafayette Mayor-President,10,00,602,142,19,9,170,1,Monique Blanco Boulet
-153,Lafayette Mayor-President,10,00,603,33,8,46,87,3,Jan Swift
-154,Lafayette Mayor-President,10,00,660,435,31,6,472,1,Monique Blanco Boulet
-155,Lafayette Mayor-President,10,00,661,197,17,12,226,1,Monique Blanco Boulet
-156,Lafayette Mayor-President,10,00,662,176,31,11,218,1,Monique Blanco Boulet
-157,Lafayette Mayor-President,10,00,663,108,5,4,117,1,Monique Blanco Boulet
-158,Lafayette Mayor-President,10,00,664,274,30,13,317,1,Monique Blanco Boulet
-159,Lafayette Mayor-President,10,00,700,129,12,18,159,1,Monique Blanco Boulet
-160,Lafayette Mayor-President,10,00,701,20,3,25,48,3,Jan Swift
-161,Lafayette Mayor-President,10,00,702,137,11,16,164,1,Monique Blanco Boulet
-162,Lafayette Mayor-President,10,00,703,108,11,9,128,1,Monique Blanco Boulet
-163,Lafayette Mayor-President,10,00,760,213,18,4,235,1,Monique Blanco Boulet
-164,Lafayette Mayor-President,10,00,761,188,17,5,210,1,Monique Blanco Boulet
-165,Lafayette Mayor-President,10,00,762,139,20,10,169,1,Monique Blanco Boulet
-166,Lafayette Mayor-President,10,00,800,200,39,65,304,1,Monique Blanco Boulet
-167,Lafayette Mayor-President,10,00,801,289,61,34,384,1,Monique Blanco Boulet
-168,Lafayette Mayor-President,10,00,860N,346,66,25,437,1,Monique Blanco Boulet
-169,Lafayette Mayor-President,10,00,860S,339,56,37,432,1,Monique Blanco Boulet
-170,Lafayette Mayor-President,10,00,861E,221,24,46,291,1,Monique Blanco Boulet
-171,Lafayette Mayor-President,10,00,861W,126,29,45,200,1,Monique Blanco Boulet
-172,Lafayette Mayor-President,10,Early Voting,,7955,1423,1717,11095,1,Monique Blanco Boulet
-173,Lafayette Mayor-President,10,Provisional Votes,,0,1,0,1,2,Josh Guillory
-174,Lafayette Mayor-President,12,00,01,123,13,1,137,1,Monique Blanco Boulet
-175,Lafayette Mayor-President,12,00,02,2,2,1,5,0,Tie
-176,Lafayette Mayor-President,12,00,04,250,49,7,306,1,Monique Blanco Boulet
-177,Lafayette Mayor-President,12,00,05N,185,25,4,214,1,Monique Blanco Boulet
-178,Lafayette Mayor-President,12,00,05S,210,34,2,246,1,Monique Blanco Boulet
-179,Lafayette Mayor-President,12,00,08,25,0,2,27,1,Monique Blanco Boulet
-180,Lafayette Mayor-President,12,00,09,55,1,4,60,1,Monique Blanco Boulet
-181,Lafayette Mayor-President,12,00,12,53,9,1,63,1,Monique Blanco Boulet
-182,Lafayette Mayor-President,12,00,13,76,6,2,84,1,Monique Blanco Boulet
-183,Lafayette Mayor-President,12,00,15,27,3,4,34,1,Monique Blanco Boulet
-184,Lafayette Mayor-President,12,00,16A,194,24,4,222,1,Monique Blanco Boulet
-185,Lafayette Mayor-President,12,00,16B,192,22,2,216,1,Monique Blanco Boulet
-186,Lafayette Mayor-President,12,00,16C,40,5,1,46,1,Monique Blanco Boulet
-187,Lafayette Mayor-President,12,00,17,52,7,1,60,1,Monique Blanco Boulet
-188,Lafayette Mayor-President,12,Early Voting,,480,53,23,556,1,Monique Blanco Boulet
-189,Lafayette Mayor-President,12,Provisional Votes,,0,0,0,0,1,
-190,Lafayette Mayor-President,23,01,01,5,9,84,98,3,Jan Swift
-191,Lafayette Mayor-President,23,01,02,0,0,1,1,3,Jan Swift
-192,Lafayette Mayor-President,23,01,03,93,14,39,146,1,Monique Blanco Boulet
-193,Lafayette Mayor-President,23,01,04,12,1,1,14,1,Monique Blanco Boulet
-194,Lafayette Mayor-President,23,01,05,16,0,4,20,1,Monique Blanco Boulet
-195,Lafayette Mayor-President,23,01,06,19,1,9,29,1,Monique Blanco Boulet
-196,Lafayette Mayor-President,23,01,07,0,1,0,1,2,Josh Guillory
-197,Lafayette Mayor-President,23,01,08,16,8,26,50,3,Jan Swift
-198,Lafayette Mayor-President,23,02,01,37,6,40,83,3,Jan Swift
-199,Lafayette Mayor-President,23,02,02,72,7,22,101,1,Monique Blanco Boulet
-200,Lafayette Mayor-President,23,02,03,77,5,18,100,1,Monique Blanco Boulet
-201,Lafayette Mayor-President,23,02,04,1,4,12,17,3,Jan Swift
-202,Lafayette Mayor-President,23,02,05,13,1,9,23,1,Monique Blanco Boulet
-203,Lafayette Mayor-President,23,02,06,18,3,7,28,1,Monique Blanco Boulet
-204,Lafayette Mayor-President,23,03,01,165,19,22,206,1,Monique Blanco Boulet
-205,Lafayette Mayor-President,23,03,02,290,38,36,364,1,Monique Blanco Boulet
-206,Lafayette Mayor-President,23,03,03,68,6,5,79,1,Monique Blanco Boulet
-207,Lafayette Mayor-President,23,03,04,60,2,6,68,1,Monique Blanco Boulet
-208,Lafayette Mayor-President,23,03,05,32,3,2,37,1,Monique Blanco Boulet
-209,Lafayette Mayor-President,23,03,06,46,5,1,52,1,Monique Blanco Boulet
-210,Lafayette Mayor-President,23,04,01,32,12,57,101,3,Jan Swift
-211,Lafayette Mayor-President,23,04,02,48,24,92,164,3,Jan Swift
-212,Lafayette Mayor-President,23,04,03,53,10,16,79,1,Monique Blanco Boulet
-213,Lafayette Mayor-President,23,05,01,60,5,5,70,1,Monique Blanco Boulet
-214,Lafayette Mayor-President,23,05,02,19,0,0,19,1,Monique Blanco Boulet
-215,Lafayette Mayor-President,23,05,03,11,0,6,17,1,Monique Blanco Boulet
-216,Lafayette Mayor-President,23,05,04,188,11,9,208,1,Monique Blanco Boulet
-217,Lafayette Mayor-President,23,05,05,19,3,18,40,1,Monique Blanco Boulet
-218,Lafayette Mayor-President,23,05,06,119,15,39,173,1,Monique Blanco Boulet
-219,Lafayette Mayor-President,23,05,07,252,30,27,309,1,Monique Blanco Boulet
-220,Lafayette Mayor-President,23,06,01,99,7,36,142,1,Monique Blanco Boulet
-221,Lafayette Mayor-President,23,06,02,37,5,4,46,1,Monique Blanco Boulet
-222,Lafayette Mayor-President,23,06,03,234,33,24,291,1,Monique Blanco Boulet
-223,Lafayette Mayor-President,23,06,04,127,18,48,193,1,Monique Blanco Boulet
-224,Lafayette Mayor-President,23,06,05,78,9,7,94,1,Monique Blanco Boulet
-225,Lafayette Mayor-President,23,07,01,216,50,28,294,1,Monique Blanco Boulet
-226,Lafayette Mayor-President,23,07,02,300,41,20,361,1,Monique Blanco Boulet
-227,Lafayette Mayor-President,23,07,03,19,7,2,28,1,Monique Blanco Boulet
-228,Lafayette Mayor-President,23,07,04,335,48,22,405,1,Monique Blanco Boulet
-229,Lafayette Mayor-President,23,07,05,85,6,5,96,1,Monique Blanco Boulet
-230,Lafayette Mayor-President,23,08,01,215,25,7,247,1,Monique Blanco Boulet
-231,Lafayette Mayor-President,23,08,02,392,25,37,454,1,Monique Blanco Boulet
-232,Lafayette Mayor-President,23,08,03,312,41,27,380,1,Monique Blanco Boulet
-233,Lafayette Mayor-President,23,08,04,18,4,1,23,1,Monique Blanco Boulet
-234,Lafayette Mayor-President,23,08,05,192,31,16,239,1,Monique Blanco Boulet
-235,Lafayette Mayor-President,23,09,01,202,22,46,270,1,Monique Blanco Boulet
-236,Lafayette Mayor-President,23,09,02,623,48,38,709,1,Monique Blanco Boulet
-237,Lafayette Mayor-President,23,09,04,311,25,26,362,1,Monique Blanco Boulet
-238,Lafayette Mayor-President,23,09,05,165,16,22,203,1,Monique Blanco Boulet
-239,Lafayette Mayor-President,23,10,01,121,21,57,199,1,Monique Blanco Boulet
-240,Lafayette Mayor-President,23,10,02,71,5,22,98,1,Monique Blanco Boulet
-241,Lafayette Mayor-President,23,10,03,272,26,9,307,1,Monique Blanco Boulet
-242,Lafayette Mayor-President,23,10,04,348,36,28,412,1,Monique Blanco Boulet
-243,Lafayette Mayor-President,23,11,01,49,5,13,67,1,Monique Blanco Boulet
-244,Lafayette Mayor-President,23,11,02,139,12,19,170,1,Monique Blanco Boulet
-245,Lafayette Mayor-President,23,11,03,127,9,13,149,1,Monique Blanco Boulet
-246,Lafayette Mayor-President,23,11,04,121,9,16,146,1,Monique Blanco Boulet
-247,Lafayette Mayor-President,23,11,05,292,34,53,379,1,Monique Blanco Boulet
-248,Lafayette Mayor-President,23,11,06,101,10,19,130,1,Monique Blanco Boulet
-249,Lafayette Mayor-President,23,11,07,54,6,7,67,1,Monique Blanco Boulet
-250,Lafayette Mayor-President,23,12,01,50,8,38,96,1,Monique Blanco Boulet
-251,Lafayette Mayor-President,23,12,02,35,4,14,53,1,Monique Blanco Boulet
-252,Lafayette Mayor-President,23,12,03,54,25,156,235,3,Jan Swift
-253,Lafayette Mayor-President,23,12,04,125,9,17,151,1,Monique Blanco Boulet
-254,Lafayette Mayor-President,23,13,01,299,25,14,338,1,Monique Blanco Boulet
-255,Lafayette Mayor-President,23,13,02,155,10,11,176,1,Monique Blanco Boulet
-256,Lafayette Mayor-President,23,13,03,371,32,10,413,1,Monique Blanco Boulet
-257,Lafayette Mayor-President,23,13,04,74,4,0,78,1,Monique Blanco Boulet
-258,Lafayette Mayor-President,23,13,05,48,6,0,54,1,Monique Blanco Boulet
-259,Lafayette Mayor-President,23,14,01,418,34,16,468,1,Monique Blanco Boulet
-260,Lafayette Mayor-President,23,14,02,3,0,1,4,1,Monique Blanco Boulet
-261,Lafayette Mayor-President,23,14,03,365,39,33,437,1,Monique Blanco Boulet
-262,Lafayette Mayor-President,23,14,04,138,7,0,145,1,Monique Blanco Boulet
-263,Lafayette Mayor-President,23,14,05,18,6,0,24,1,Monique Blanco Boulet
-264,Lafayette Mayor-President,23,Early Voting,,3189,444,689,4322,1,Monique Blanco Boulet
-265,Lafayette Mayor-President,23,Provisional Votes,,1,0,3,4,3,Jan Swift
-266,Lafayette Mayor-President,27,00,01,263,34,40,337,1,Monique Blanco Boulet
-267,Lafayette Mayor-President,27,00,02,242,11,11,264,1,Monique Blanco Boulet
-268,Lafayette Mayor-President,27,00,03,121,17,1,139,1,Monique Blanco Boulet
-269,Lafayette Mayor-President,27,00,04,244,17,6,267,1,Monique Blanco Boulet
-270,Lafayette Mayor-President,27,00,05,60,9,44,113,1,Monique Blanco Boulet
-271,Lafayette Mayor-President,27,00,05A,9,5,9,23,0,Tie
-272,Lafayette Mayor-President,27,00,06,137,17,11,165,1,Monique Blanco Boulet
-273,Lafayette Mayor-President,27,00,06A,36,9,11,56,1,Monique Blanco Boulet
-274,Lafayette Mayor-President,27,00,07,366,32,29,427,1,Monique Blanco Boulet
-275,Lafayette Mayor-President,27,00,08,21,4,22,47,3,Jan Swift
-276,Lafayette Mayor-President,27,00,08A,23,6,3,32,1,Monique Blanco Boulet
-277,Lafayette Mayor-President,27,00,08B,23,3,22,48,1,Monique Blanco Boulet
-278,Lafayette Mayor-President,27,00,09A,43,16,7,66,1,Monique Blanco Boulet
-279,Lafayette Mayor-President,27,00,09B,233,29,21,283,1,Monique Blanco Boulet
-280,Lafayette Mayor-President,27,00,10,440,35,5,480,1,Monique Blanco Boulet
-281,Lafayette Mayor-President,27,00,10A,70,4,4,78,1,Monique Blanco Boulet
-282,Lafayette Mayor-President,27,00,12,215,26,16,257,1,Monique Blanco Boulet
-283,Lafayette Mayor-President,27,00,13,133,23,61,217,1,Monique Blanco Boulet
-284,Lafayette Mayor-President,27,00,14,370,49,21,440,1,Monique Blanco Boulet
-285,Lafayette Mayor-President,27,00,16,140,14,33,187,1,Monique Blanco Boulet
-286,Lafayette Mayor-President,27,00,16A,10,0,0,10,1,Monique Blanco Boulet
-287,Lafayette Mayor-President,27,00,17,91,2,4,97,1,Monique Blanco Boulet
-288,Lafayette Mayor-President,27,00,18,138,24,5,167,1,Monique Blanco Boulet
-289,Lafayette Mayor-President,27,00,19,328,69,39,436,1,Monique Blanco Boulet
-290,Lafayette Mayor-President,27,00,20,122,11,10,143,1,Monique Blanco Boulet
-291,Lafayette Mayor-President,27,00,21,281,45,19,345,1,Monique Blanco Boulet
-292,Lafayette Mayor-President,27,00,21A,2,0,0,2,1,Monique Blanco Boulet
-293,Lafayette Mayor-President,27,00,23,551,68,25,644,1,Monique Blanco Boulet
-294,Lafayette Mayor-President,27,00,23A,74,8,16,98,1,Monique Blanco Boulet
-295,Lafayette Mayor-President,27,00,23B,118,9,1,128,1,Monique Blanco Boulet
-296,Lafayette Mayor-President,27,00,23C,1,0,0,1,1,Monique Blanco Boulet
-297,Lafayette Mayor-President,27,Early Voting,,2411,377,334,3122,1,Monique Blanco Boulet
-298,Lafayette Mayor-President,27,Provisional Votes,,2,0,0,2,1,Monique Blanco Boulet
-299,Lafayette Mayor-President,28,00,001,468,69,69,606,1,Monique Blanco Boulet
-300,Lafayette Mayor-President,28,00,002,373,58,44,475,1,Monique Blanco Boulet
-301,Lafayette Mayor-President,28,00,003,349,57,39,445,1,Monique Blanco Boulet
-302,Lafayette Mayor-President,28,00,004,283,81,123,487,1,Monique Blanco Boulet
-303,Lafayette Mayor-President,28,00,005,129,45,60,234,1,Monique Blanco Boulet
-304,Lafayette Mayor-President,28,00,006,652,114,93,859,1,Monique Blanco Boulet
-305,Lafayette Mayor-President,28,00,007,225,74,99,398,1,Monique Blanco Boulet
-306,Lafayette Mayor-President,28,00,008,287,38,86,411,1,Monique Blanco Boulet
-307,Lafayette Mayor-President,28,00,009,256,50,91,397,1,Monique Blanco Boulet
-308,Lafayette Mayor-President,28,00,010,181,26,26,233,1,Monique Blanco Boulet
-309,Lafayette Mayor-President,28,00,011,194,45,90,329,1,Monique Blanco Boulet
-310,Lafayette Mayor-President,28,00,012,325,59,56,440,1,Monique Blanco Boulet
-311,Lafayette Mayor-President,28,00,013,200,41,65,306,1,Monique Blanco Boulet
-312,Lafayette Mayor-President,28,00,014,70,31,62,163,1,Monique Blanco Boulet
-313,Lafayette Mayor-President,28,00,015,11,27,52,90,3,Jan Swift
-314,Lafayette Mayor-President,28,00,016,26,12,56,94,3,Jan Swift
-315,Lafayette Mayor-President,28,00,017,28,26,72,126,3,Jan Swift
-316,Lafayette Mayor-President,28,00,018,15,28,93,136,3,Jan Swift
-317,Lafayette Mayor-President,28,00,019,19,25,92,136,3,Jan Swift
-318,Lafayette Mayor-President,28,00,020,60,45,119,224,3,Jan Swift
-319,Lafayette Mayor-President,28,00,021,32,21,56,109,3,Jan Swift
-320,Lafayette Mayor-President,28,00,022,1,12,47,60,3,Jan Swift
-321,Lafayette Mayor-President,28,00,023,8,7,57,72,3,Jan Swift
-322,Lafayette Mayor-President,28,00,024,26,25,84,135,3,Jan Swift
-323,Lafayette Mayor-President,28,00,025,154,13,15,182,1,Monique Blanco Boulet
-324,Lafayette Mayor-President,28,00,026,216,58,60,334,1,Monique Blanco Boulet
-325,Lafayette Mayor-President,28,00,027,171,23,28,222,1,Monique Blanco Boulet
-326,Lafayette Mayor-President,28,00,028,668,78,46,792,1,Monique Blanco Boulet
-327,Lafayette Mayor-President,28,00,029,341,46,21,408,1,Monique Blanco Boulet
-328,Lafayette Mayor-President,28,00,030,265,49,29,343,1,Monique Blanco Boulet
-329,Lafayette Mayor-President,28,00,031,336,54,47,437,1,Monique Blanco Boulet
-330,Lafayette Mayor-President,28,00,032,384,83,57,524,1,Monique Blanco Boulet
-331,Lafayette Mayor-President,28,00,033,488,80,37,605,1,Monique Blanco Boulet
-332,Lafayette Mayor-President,28,00,034,438,81,55,574,1,Monique Blanco Boulet
-333,Lafayette Mayor-President,28,00,035,331,50,24,405,1,Monique Blanco Boulet
-334,Lafayette Mayor-President,28,00,036,536,93,68,697,1,Monique Blanco Boulet
-335,Lafayette Mayor-President,28,00,037,583,70,60,713,1,Monique Blanco Boulet
-336,Lafayette Mayor-President,28,00,038,261,77,45,383,1,Monique Blanco Boulet
-337,Lafayette Mayor-President,28,00,039,128,38,87,253,1,Monique Blanco Boulet
-338,Lafayette Mayor-President,28,00,040,118,31,31,180,1,Monique Blanco Boulet
-339,Lafayette Mayor-President,28,00,041,172,43,54,269,1,Monique Blanco Boulet
-340,Lafayette Mayor-President,28,00,042,158,44,55,257,1,Monique Blanco Boulet
-341,Lafayette Mayor-President,28,00,043,188,48,30,266,1,Monique Blanco Boulet
-342,Lafayette Mayor-President,28,00,044,136,31,31,198,1,Monique Blanco Boulet
-343,Lafayette Mayor-President,28,00,045,183,49,42,274,1,Monique Blanco Boulet
-344,Lafayette Mayor-President,28,00,046,135,31,18,184,1,Monique Blanco Boulet
-345,Lafayette Mayor-President,28,00,047,224,76,42,342,1,Monique Blanco Boulet
-346,Lafayette Mayor-President,28,00,048,149,57,30,236,1,Monique Blanco Boulet
-347,Lafayette Mayor-President,28,00,049,243,139,54,436,1,Monique Blanco Boulet
-348,Lafayette Mayor-President,28,00,051,15,18,63,96,3,Jan Swift
-349,Lafayette Mayor-President,28,00,052,37,13,44,94,3,Jan Swift
-350,Lafayette Mayor-President,28,00,053,23,17,53,93,3,Jan Swift
-351,Lafayette Mayor-President,28,00,054,3,12,53,68,3,Jan Swift
-352,Lafayette Mayor-President,28,00,055,108,37,90,235,1,Monique Blanco Boulet
-353,Lafayette Mayor-President,28,00,056,22,26,66,114,3,Jan Swift
-354,Lafayette Mayor-President,28,00,057,22,21,43,86,3,Jan Swift
-355,Lafayette Mayor-President,28,00,058,3,8,46,57,3,Jan Swift
-356,Lafayette Mayor-President,28,00,059,111,40,35,186,1,Monique Blanco Boulet
-357,Lafayette Mayor-President,28,00,060,90,35,39,164,1,Monique Blanco Boulet
-358,Lafayette Mayor-President,28,00,061,7,6,31,44,3,Jan Swift
-359,Lafayette Mayor-President,28,00,062,2,6,20,28,3,Jan Swift
-360,Lafayette Mayor-President,28,00,063,31,11,42,84,3,Jan Swift
-361,Lafayette Mayor-President,28,00,064,91,6,6,103,1,Monique Blanco Boulet
-362,Lafayette Mayor-President,28,00,065,27,19,37,83,3,Jan Swift
-363,Lafayette Mayor-President,28,00,066,36,34,44,114,3,Jan Swift
-364,Lafayette Mayor-President,28,00,067,331,71,30,432,1,Monique Blanco Boulet
-365,Lafayette Mayor-President,28,00,068,56,40,53,149,1,Monique Blanco Boulet
-366,Lafayette Mayor-President,28,00,069,83,70,37,190,1,Monique Blanco Boulet
-367,Lafayette Mayor-President,28,00,070,123,84,43,250,1,Monique Blanco Boulet
-368,Lafayette Mayor-President,28,00,071,278,44,33,355,1,Monique Blanco Boulet
-369,Lafayette Mayor-President,28,00,072,46,28,22,96,1,Monique Blanco Boulet
-370,Lafayette Mayor-President,28,00,073,130,100,14,244,1,Monique Blanco Boulet
-371,Lafayette Mayor-President,28,00,074,128,61,61,250,1,Monique Blanco Boulet
-372,Lafayette Mayor-President,28,00,075,123,44,29,196,1,Monique Blanco Boulet
-373,Lafayette Mayor-President,28,00,076,273,100,33,406,1,Monique Blanco Boulet
-374,Lafayette Mayor-President,28,00,077,228,70,25,323,1,Monique Blanco Boulet
-375,Lafayette Mayor-President,28,00,078,404,160,27,591,1,Monique Blanco Boulet
-376,Lafayette Mayor-President,28,00,079,205,108,19,332,1,Monique Blanco Boulet
-377,Lafayette Mayor-President,28,00,080,251,137,7,395,1,Monique Blanco Boulet
-378,Lafayette Mayor-President,28,00,081,148,42,17,207,1,Monique Blanco Boulet
-379,Lafayette Mayor-President,28,00,082,247,114,45,406,1,Monique Blanco Boulet
-380,Lafayette Mayor-President,28,00,083,417,103,34,554,1,Monique Blanco Boulet
-381,Lafayette Mayor-President,28,00,084,356,102,34,492,1,Monique Blanco Boulet
-382,Lafayette Mayor-President,28,00,085,383,163,34,580,1,Monique Blanco Boulet
-383,Lafayette Mayor-President,28,00,086,680,126,50,856,1,Monique Blanco Boulet
-384,Lafayette Mayor-President,28,00,087,385,179,34,598,1,Monique Blanco Boulet
-385,Lafayette Mayor-President,28,00,088,278,84,36,398,1,Monique Blanco Boulet
-386,Lafayette Mayor-President,28,00,089,193,77,14,284,1,Monique Blanco Boulet
-387,Lafayette Mayor-President,28,00,090,161,72,24,257,1,Monique Blanco Boulet
-388,Lafayette Mayor-President,28,00,091,456,149,46,651,1,Monique Blanco Boulet
-389,Lafayette Mayor-President,28,00,092,263,106,75,444,1,Monique Blanco Boulet
-390,Lafayette Mayor-President,28,00,093,162,41,29,232,1,Monique Blanco Boulet
-391,Lafayette Mayor-President,28,00,094,378,101,57,536,1,Monique Blanco Boulet
-392,Lafayette Mayor-President,28,00,095,521,143,25,689,1,Monique Blanco Boulet
-393,Lafayette Mayor-President,28,00,096,257,74,27,358,1,Monique Blanco Boulet
-394,Lafayette Mayor-President,28,00,097,105,16,16,137,1,Monique Blanco Boulet
-395,Lafayette Mayor-President,28,00,098,502,98,65,665,1,Monique Blanco Boulet
-396,Lafayette Mayor-President,28,00,099,184,47,51,282,1,Monique Blanco Boulet
-397,Lafayette Mayor-President,28,00,100,363,55,29,447,1,Monique Blanco Boulet
-398,Lafayette Mayor-President,28,00,101,772,181,40,993,1,Monique Blanco Boulet
-399,Lafayette Mayor-President,28,00,102,546,90,39,675,1,Monique Blanco Boulet
-400,Lafayette Mayor-President,28,00,103,590,111,61,762,1,Monique Blanco Boulet
-401,Lafayette Mayor-President,28,00,104,447,98,26,571,1,Monique Blanco Boulet
-402,Lafayette Mayor-President,28,00,105,610,110,32,752,1,Monique Blanco Boulet
-403,Lafayette Mayor-President,28,00,106,522,94,54,670,1,Monique Blanco Boulet
-404,Lafayette Mayor-President,28,00,107,535,124,32,691,1,Monique Blanco Boulet
-405,Lafayette Mayor-President,28,00,108,633,107,37,777,1,Monique Blanco Boulet
-406,Lafayette Mayor-President,28,00,109,453,87,42,582,1,Monique Blanco Boulet
-407,Lafayette Mayor-President,28,00,110,414,84,30,528,1,Monique Blanco Boulet
-408,Lafayette Mayor-President,28,00,111,476,85,28,589,1,Monique Blanco Boulet
-409,Lafayette Mayor-President,28,00,112,389,72,46,507,1,Monique Blanco Boulet
-410,Lafayette Mayor-President,28,00,113,202,24,43,269,1,Monique Blanco Boulet
-411,Lafayette Mayor-President,28,00,114,155,17,12,184,1,Monique Blanco Boulet
-412,Lafayette Mayor-President,28,00,115,315,61,34,410,1,Monique Blanco Boulet
-413,Lafayette Mayor-President,28,00,116,335,90,44,469,1,Monique Blanco Boulet
-414,Lafayette Mayor-President,28,00,117,261,70,40,371,1,Monique Blanco Boulet
-415,Lafayette Mayor-President,28,00,118,310,70,13,393,1,Monique Blanco Boulet
-416,Lafayette Mayor-President,28,00,119,285,24,19,328,1,Monique Blanco Boulet
-417,Lafayette Mayor-President,28,00,120,432,132,44,608,1,Monique Blanco Boulet
-418,Lafayette Mayor-President,28,00,121,278,105,22,405,1,Monique Blanco Boulet
-419,Lafayette Mayor-President,28,00,122,337,53,29,419,1,Monique Blanco Boulet
-420,Lafayette Mayor-President,28,00,123,300,49,77,426,1,Monique Blanco Boulet
-421,Lafayette Mayor-President,28,00,124,428,96,42,566,1,Monique Blanco Boulet
-422,Lafayette Mayor-President,28,00,125,489,109,28,626,1,Monique Blanco Boulet
-423,Lafayette Mayor-President,28,00,126,374,98,27,499,1,Monique Blanco Boulet
-424,Lafayette Mayor-President,28,00,127,317,75,35,427,1,Monique Blanco Boulet
-425,Lafayette Mayor-President,28,00,128,359,73,41,473,1,Monique Blanco Boulet
-426,Lafayette Mayor-President,28,Early Voting,,9780,2503,2097,14380,1,Monique Blanco Boulet
-427,Lafayette Mayor-President,28,Provisional Votes,,1,1,0,2,0,Tie
-428,Lafayette Mayor-President,50,00,03,507,73,68,648,1,Monique Blanco Boulet
-429,Lafayette Mayor-President,50,00,04,76,12,3,91,1,Monique Blanco Boulet
-430,Lafayette Mayor-President,50,00,05,30,3,0,33,1,Monique Blanco Boulet
-431,Lafayette Mayor-President,50,00,06,113,7,4,124,1,Monique Blanco Boulet
-432,Lafayette Mayor-President,50,00,07,29,3,12,44,1,Monique Blanco Boulet
-433,Lafayette Mayor-President,50,00,08,151,14,13,178,1,Monique Blanco Boulet
-434,Lafayette Mayor-President,50,00,09,260,33,33,326,1,Monique Blanco Boulet
-435,Lafayette Mayor-President,50,00,10,27,16,86,129,3,Jan Swift
-436,Lafayette Mayor-President,50,00,11,46,11,34,91,1,Monique Blanco Boulet
-437,Lafayette Mayor-President,50,00,12,231,33,78,342,1,Monique Blanco Boulet
-438,Lafayette Mayor-President,50,00,13,27,1,6,34,1,Monique Blanco Boulet
-439,Lafayette Mayor-President,50,00,14,128,5,5,138,1,Monique Blanco Boulet
-440,Lafayette Mayor-President,50,00,15,73,12,48,133,1,Monique Blanco Boulet
-441,Lafayette Mayor-President,50,00,16,30,3,4,37,1,Monique Blanco Boulet
-442,Lafayette Mayor-President,50,00,17,378,37,6,421,1,Monique Blanco Boulet
-443,Lafayette Mayor-President,50,00,18,189,31,42,262,1,Monique Blanco Boulet
-444,Lafayette Mayor-President,50,00,19,56,6,21,83,1,Monique Blanco Boulet
-445,Lafayette Mayor-President,50,00,20,217,17,16,250,1,Monique Blanco Boulet
-446,Lafayette Mayor-President,50,00,21,286,33,24,343,1,Monique Blanco Boulet
-447,Lafayette Mayor-President,50,00,22,207,22,9,238,1,Monique Blanco Boulet
-448,Lafayette Mayor-President,50,00,23,62,30,47,139,1,Monique Blanco Boulet
-449,Lafayette Mayor-President,50,00,24,203,57,121,381,1,Monique Blanco Boulet
-450,Lafayette Mayor-President,50,00,25,89,19,8,116,1,Monique Blanco Boulet
-451,Lafayette Mayor-President,50,00,26,105,21,17,143,1,Monique Blanco Boulet
-452,Lafayette Mayor-President,50,00,27,41,5,18,64,1,Monique Blanco Boulet
-453,Lafayette Mayor-President,50,00,28,433,67,90,590,1,Monique Blanco Boulet
-454,Lafayette Mayor-President,50,00,29,379,40,66,485,1,Monique Blanco Boulet
-455,Lafayette Mayor-President,50,00,30,133,9,12,154,1,Monique Blanco Boulet
-456,Lafayette Mayor-President,50,00,31,157,22,8,187,1,Monique Blanco Boulet
-457,Lafayette Mayor-President,50,00,32,28,1,3,32,1,Monique Blanco Boulet
-458,Lafayette Mayor-President,50,00,33,196,48,51,295,1,Monique Blanco Boulet
-459,Lafayette Mayor-President,50,00,34,245,38,33,316,1,Monique Blanco Boulet
-460,Lafayette Mayor-President,50,00,35,437,40,31,508,1,Monique Blanco Boulet
-461,Lafayette Mayor-President,50,00,36,50,6,5,61,1,Monique Blanco Boulet
-462,Lafayette Mayor-President,50,00,37,250,35,12,297,1,Monique Blanco Boulet
-463,Lafayette Mayor-President,50,00,38,265,21,14,300,1,Monique Blanco Boulet
-464,Lafayette Mayor-President,50,00,39,282,27,22,331,1,Monique Blanco Boulet
-465,Lafayette Mayor-President,50,00,40,190,29,52,271,1,Monique Blanco Boulet
-466,Lafayette Mayor-President,50,00,41,303,21,16,340,1,Monique Blanco Boulet
-467,Lafayette Mayor-President,50,00,42,343,25,51,419,1,Monique Blanco Boulet
-468,Lafayette Mayor-President,50,00,43,170,17,12,199,1,Monique Blanco Boulet
-469,Lafayette Mayor-President,50,Early Voting,,3556,458,650,4664,1,Monique Blanco Boulet
-470,Lafayette Mayor-President,50,Provisional Votes,,0,0,0,0,1,
-471,Lafayette Mayor-President,51,00,01,42,0,2,44,1,Monique Blanco Boulet
-472,Lafayette Mayor-President,51,00,02,54,1,36,91,1,Monique Blanco Boulet
-473,Lafayette Mayor-President,51,00,03,30,4,53,87,3,Jan Swift
-474,Lafayette Mayor-President,51,00,04,167,14,13,194,1,Monique Blanco Boulet
-475,Lafayette Mayor-President,51,00,05,87,16,37,140,1,Monique Blanco Boulet
-476,Lafayette Mayor-President,51,00,06,334,15,39,388,1,Monique Blanco Boulet
-477,Lafayette Mayor-President,51,00,07,127,22,76,225,1,Monique Blanco Boulet
-478,Lafayette Mayor-President,51,00,08,10,3,48,61,3,Jan Swift
-479,Lafayette Mayor-President,51,00,09,104,8,18,130,1,Monique Blanco Boulet
-480,Lafayette Mayor-President,51,00,10,143,17,45,205,1,Monique Blanco Boulet
-481,Lafayette Mayor-President,51,00,11,86,7,24,117,1,Monique Blanco Boulet
-482,Lafayette Mayor-President,51,00,12,32,4,37,73,3,Jan Swift
-483,Lafayette Mayor-President,51,00,13,84,8,26,118,1,Monique Blanco Boulet
-484,Lafayette Mayor-President,51,00,14,176,24,33,233,1,Monique Blanco Boulet
-485,Lafayette Mayor-President,51,00,15,72,7,35,114,1,Monique Blanco Boulet
-486,Lafayette Mayor-President,51,00,16,10,6,36,52,3,Jan Swift
-487,Lafayette Mayor-President,51,00,17,114,7,24,145,1,Monique Blanco Boulet
-488,Lafayette Mayor-President,51,00,18,8,2,37,47,3,Jan Swift
-489,Lafayette Mayor-President,51,00,19,225,13,15,253,1,Monique Blanco Boulet
-490,Lafayette Mayor-President,51,00,20,110,16,40,166,1,Monique Blanco Boulet
-491,Lafayette Mayor-President,51,00,21,177,16,23,216,1,Monique Blanco Boulet
-492,Lafayette Mayor-President,51,00,22,316,20,31,367,1,Monique Blanco Boulet
-493,Lafayette Mayor-President,51,00,23,143,11,24,178,1,Monique Blanco Boulet
-494,Lafayette Mayor-President,51,00,25,105,7,77,189,1,Monique Blanco Boulet
-495,Lafayette Mayor-President,51,00,26,183,16,67,266,1,Monique Blanco Boulet
-496,Lafayette Mayor-President,51,00,27,148,16,31,195,1,Monique Blanco Boulet
-497,Lafayette Mayor-President,51,00,28,213,12,11,236,1,Monique Blanco Boulet
-498,Lafayette Mayor-President,51,00,29,303,19,7,329,1,Monique Blanco Boulet
-499,Lafayette Mayor-President,51,00,30,197,8,7,212,1,Monique Blanco Boulet
-500,Lafayette Mayor-President,51,00,31,330,20,14,364,1,Monique Blanco Boulet
-501,Lafayette Mayor-President,51,00,32,274,15,10,299,1,Monique Blanco Boulet
-502,Lafayette Mayor-President,51,00,33,245,15,20,280,1,Monique Blanco Boulet
-503,Lafayette Mayor-President,51,00,34,142,8,14,164,1,Monique Blanco Boulet
-504,Lafayette Mayor-President,51,00,35,168,13,29,210,1,Monique Blanco Boulet
-505,Lafayette Mayor-President,51,00,36,217,16,9,242,1,Monique Blanco Boulet
-506,Lafayette Mayor-President,51,00,37,253,12,14,279,1,Monique Blanco Boulet
-507,Lafayette Mayor-President,51,00,38,141,14,31,186,1,Monique Blanco Boulet
-508,Lafayette Mayor-President,51,00,39,241,13,37,291,1,Monique Blanco Boulet
-509,Lafayette Mayor-President,51,00,40,221,7,13,241,1,Monique Blanco Boulet
-510,Lafayette Mayor-President,51,00,42,15,2,33,50,3,Jan Swift
-511,Lafayette Mayor-President,51,00,43,133,5,7,145,1,Monique Blanco Boulet
-512,Lafayette Mayor-President,51,00,44,1,0,23,24,3,Jan Swift
-513,Lafayette Mayor-President,51,Early Voting,,2232,162,358,2752,1,Monique Blanco Boulet
-514,Lafayette Mayor-President,51,Provisional Votes,,0,0,0,0,1,
-515,Lafayette Mayor-President,57,00,01,466,24,14,504,1,Monique Blanco Boulet
-516,Lafayette Mayor-President,57,00,02,233,24,30,287,1,Monique Blanco Boulet
-517,Lafayette Mayor-President,57,00,05A,186,17,5,208,1,Monique Blanco Boulet
-518,Lafayette Mayor-President,57,00,06,266,25,12,303,1,Monique Blanco Boulet
-519,Lafayette Mayor-President,57,00,07A-1,54,5,3,62,1,Monique Blanco Boulet
-520,Lafayette Mayor-President,57,00,07B,302,17,12,331,1,Monique Blanco Boulet
-521,Lafayette Mayor-President,57,00,08B,118,4,1,123,1,Monique Blanco Boulet
-522,Lafayette Mayor-President,57,00,09,228,25,28,281,1,Monique Blanco Boulet
-523,Lafayette Mayor-President,57,00,10A,204,20,9,233,1,Monique Blanco Boulet
-524,Lafayette Mayor-President,57,00,11,186,16,13,215,1,Monique Blanco Boulet
-525,Lafayette Mayor-President,57,00,12,88,8,51,147,1,Monique Blanco Boulet
-526,Lafayette Mayor-President,57,00,14,472,36,9,517,1,Monique Blanco Boulet
-527,Lafayette Mayor-President,57,00,16,67,5,2,74,1,Monique Blanco Boulet
-528,Lafayette Mayor-President,57,00,18,664,53,26,743,1,Monique Blanco Boulet
-529,Lafayette Mayor-President,57,00,19A,463,30,18,511,1,Monique Blanco Boulet
-530,Lafayette Mayor-President,57,00,19A-1,95,14,8,117,1,Monique Blanco Boulet
-531,Lafayette Mayor-President,57,00,19B,9,5,1,15,1,Monique Blanco Boulet
-532,Lafayette Mayor-President,57,00,20A-2,63,4,5,72,1,Monique Blanco Boulet
-533,Lafayette Mayor-President,57,00,20B-1,130,11,9,150,1,Monique Blanco Boulet
-534,Lafayette Mayor-President,57,00,21,35,4,0,39,1,Monique Blanco Boulet
-535,Lafayette Mayor-President,57,00,21A,104,10,0,114,1,Monique Blanco Boulet
-536,Lafayette Mayor-President,57,00,23,282,21,15,318,1,Monique Blanco Boulet
-537,Lafayette Mayor-President,57,00,24,310,36,24,370,1,Monique Blanco Boulet
-538,Lafayette Mayor-President,57,00,25,583,83,39,705,1,Monique Blanco Boulet
-539,Lafayette Mayor-President,57,00,25A,98,7,5,110,1,Monique Blanco Boulet
-540,Lafayette Mayor-President,57,00,26,276,28,14,318,1,Monique Blanco Boulet
-541,Lafayette Mayor-President,57,00,26A,166,12,11,189,1,Monique Blanco Boulet
-542,Lafayette Mayor-President,57,00,28,247,25,11,283,1,Monique Blanco Boulet
-543,Lafayette Mayor-President,57,00,29,158,31,12,201,1,Monique Blanco Boulet
-544,Lafayette Mayor-President,57,00,32B,18,3,20,41,3,Jan Swift
-545,Lafayette Mayor-President,57,00,34,97,18,27,142,1,Monique Blanco Boulet
-546,Lafayette Mayor-President,57,00,34A,15,5,23,43,3,Jan Swift
-547,Lafayette Mayor-President,57,00,35,126,26,28,180,1,Monique Blanco Boulet
-548,Lafayette Mayor-President,57,00,36A-1,27,6,16,49,1,Monique Blanco Boulet
-549,Lafayette Mayor-President,57,00,37,35,21,73,129,3,Jan Swift
-550,Lafayette Mayor-President,57,00,38,14,11,52,77,3,Jan Swift
-551,Lafayette Mayor-President,57,00,39,37,5,28,70,1,Monique Blanco Boulet
-552,Lafayette Mayor-President,57,00,40,293,29,23,345,1,Monique Blanco Boulet
-553,Lafayette Mayor-President,57,00,41,25,1,2,28,1,Monique Blanco Boulet
-554,Lafayette Mayor-President,57,00,42A,217,19,18,254,1,Monique Blanco Boulet
-555,Lafayette Mayor-President,57,00,42B,15,4,0,19,1,Monique Blanco Boulet
-556,Lafayette Mayor-President,57,00,44,250,22,8,280,1,Monique Blanco Boulet
-557,Lafayette Mayor-President,57,00,45A,172,9,8,189,1,Monique Blanco Boulet
-558,Lafayette Mayor-President,57,00,46A,106,19,10,135,1,Monique Blanco Boulet
-559,Lafayette Mayor-President,57,00,46B-1,116,14,30,160,1,Monique Blanco Boulet
-560,Lafayette Mayor-President,57,00,46B-2,20,4,19,43,1,Monique Blanco Boulet
-561,Lafayette Mayor-President,57,00,46B-3,41,11,7,59,1,Monique Blanco Boulet
-562,Lafayette Mayor-President,57,00,46B-4,113,14,17,144,1,Monique Blanco Boulet
-563,Lafayette Mayor-President,57,00,49B-1,724,48,21,793,1,Monique Blanco Boulet
-564,Lafayette Mayor-President,57,00,49B-2,89,9,2,100,1,Monique Blanco Boulet
-565,Lafayette Mayor-President,57,00,50A,279,18,19,316,1,Monique Blanco Boulet
-566,Lafayette Mayor-President,57,00,51,227,24,14,265,1,Monique Blanco Boulet
-567,Lafayette Mayor-President,57,00,53,473,64,33,570,1,Monique Blanco Boulet
-568,Lafayette Mayor-President,57,00,57A,281,31,14,326,1,Monique Blanco Boulet
-569,Lafayette Mayor-President,57,00,57B,48,4,0,52,1,Monique Blanco Boulet
-570,Lafayette Mayor-President,57,Early Voting,,3023,310,318,3651,1,Monique Blanco Boulet
-571,Lafayette Mayor-President,57,Provisional Votes,,0,0,0,0,1,
+0,Lafayette Mayor-President,28,00,001,0,0,0,0,0,
+1,Lafayette Mayor-President,28,00,002,0,0,0,0,0,
+2,Lafayette Mayor-President,28,00,003,0,0,0,0,0,
+3,Lafayette Mayor-President,28,00,004,0,0,0,0,0,
+4,Lafayette Mayor-President,28,00,005,0,0,0,0,0,
+5,Lafayette Mayor-President,28,00,006,0,0,0,0,0,
+6,Lafayette Mayor-President,28,00,007,0,0,0,0,0,
+7,Lafayette Mayor-President,28,00,008,0,0,0,0,0,
+8,Lafayette Mayor-President,28,00,009,0,0,0,0,0,
+9,Lafayette Mayor-President,28,00,010,0,0,0,0,0,
+10,Lafayette Mayor-President,28,00,011,0,0,0,0,0,
+11,Lafayette Mayor-President,28,00,012,0,0,0,0,0,
+12,Lafayette Mayor-President,28,00,013,0,0,0,0,0,
+13,Lafayette Mayor-President,28,00,014,0,0,0,0,0,
+14,Lafayette Mayor-President,28,00,015,0,0,0,0,0,
+15,Lafayette Mayor-President,28,00,016,0,0,0,0,0,
+16,Lafayette Mayor-President,28,00,017,0,0,0,0,0,
+17,Lafayette Mayor-President,28,00,018,0,0,0,0,0,
+18,Lafayette Mayor-President,28,00,019,0,0,0,0,0,
+19,Lafayette Mayor-President,28,00,020,0,0,0,0,0,
+20,Lafayette Mayor-President,28,00,021,0,0,0,0,0,
+21,Lafayette Mayor-President,28,00,022,0,0,0,0,0,
+22,Lafayette Mayor-President,28,00,023,0,0,0,0,0,
+23,Lafayette Mayor-President,28,00,024,0,0,0,0,0,
+24,Lafayette Mayor-President,28,00,025,0,0,0,0,0,
+25,Lafayette Mayor-President,28,00,026,0,0,0,0,0,
+26,Lafayette Mayor-President,28,00,027,0,0,0,0,0,
+27,Lafayette Mayor-President,28,00,028,0,0,0,0,0,
+28,Lafayette Mayor-President,28,00,029,0,0,0,0,0,
+29,Lafayette Mayor-President,28,00,030,0,0,0,0,0,
+30,Lafayette Mayor-President,28,00,031,0,0,0,0,0,
+31,Lafayette Mayor-President,28,00,032,0,0,0,0,0,
+32,Lafayette Mayor-President,28,00,033,0,0,0,0,0,
+33,Lafayette Mayor-President,28,00,034,0,0,0,0,0,
+34,Lafayette Mayor-President,28,00,035,0,0,0,0,0,
+35,Lafayette Mayor-President,28,00,036,0,0,0,0,0,
+36,Lafayette Mayor-President,28,00,037,0,0,0,0,0,
+37,Lafayette Mayor-President,28,00,038,0,0,0,0,0,
+38,Lafayette Mayor-President,28,00,039,0,0,0,0,0,
+39,Lafayette Mayor-President,28,00,040,0,0,0,0,0,
+40,Lafayette Mayor-President,28,00,041,0,0,0,0,0,
+41,Lafayette Mayor-President,28,00,042,0,0,0,0,0,
+42,Lafayette Mayor-President,28,00,043,0,0,0,0,0,
+43,Lafayette Mayor-President,28,00,044,0,0,0,0,0,
+44,Lafayette Mayor-President,28,00,045,0,0,0,0,0,
+45,Lafayette Mayor-President,28,00,046,0,0,0,0,0,
+46,Lafayette Mayor-President,28,00,047,0,0,0,0,0,
+47,Lafayette Mayor-President,28,00,048,0,0,0,0,0,
+48,Lafayette Mayor-President,28,00,049,0,0,0,0,0,
+49,Lafayette Mayor-President,28,00,051,0,0,0,0,0,
+50,Lafayette Mayor-President,28,00,052,0,0,0,0,0,
+51,Lafayette Mayor-President,28,00,053,0,0,0,0,0,
+52,Lafayette Mayor-President,28,00,054,0,0,0,0,0,
+53,Lafayette Mayor-President,28,00,055,0,0,0,0,0,
+54,Lafayette Mayor-President,28,00,056,0,0,0,0,0,
+55,Lafayette Mayor-President,28,00,057,0,0,0,0,0,
+56,Lafayette Mayor-President,28,00,058,0,0,0,0,0,
+57,Lafayette Mayor-President,28,00,059,0,0,0,0,0,
+58,Lafayette Mayor-President,28,00,060,0,0,0,0,0,
+59,Lafayette Mayor-President,28,00,061,0,0,0,0,0,
+60,Lafayette Mayor-President,28,00,062,0,0,0,0,0,
+61,Lafayette Mayor-President,28,00,063,0,0,0,0,0,
+62,Lafayette Mayor-President,28,00,064,0,0,0,0,0,
+63,Lafayette Mayor-President,28,00,065,0,0,0,0,0,
+64,Lafayette Mayor-President,28,00,066,0,0,0,0,0,
+65,Lafayette Mayor-President,28,00,067,0,0,0,0,0,
+66,Lafayette Mayor-President,28,00,068,0,0,0,0,0,
+67,Lafayette Mayor-President,28,00,069,0,0,0,0,0,
+68,Lafayette Mayor-President,28,00,070,0,0,0,0,0,
+69,Lafayette Mayor-President,28,00,071,0,0,0,0,0,
+70,Lafayette Mayor-President,28,00,072,0,0,0,0,0,
+71,Lafayette Mayor-President,28,00,073,0,0,0,0,0,
+72,Lafayette Mayor-President,28,00,074,0,0,0,0,0,
+73,Lafayette Mayor-President,28,00,075,0,0,0,0,0,
+74,Lafayette Mayor-President,28,00,076,0,0,0,0,0,
+75,Lafayette Mayor-President,28,00,077,0,0,0,0,0,
+76,Lafayette Mayor-President,28,00,078,0,0,0,0,0,
+77,Lafayette Mayor-President,28,00,079,0,0,0,0,0,
+78,Lafayette Mayor-President,28,00,080,0,0,0,0,0,
+79,Lafayette Mayor-President,28,00,081,0,0,0,0,0,
+80,Lafayette Mayor-President,28,00,082,0,0,0,0,0,
+81,Lafayette Mayor-President,28,00,083,0,0,0,0,0,
+82,Lafayette Mayor-President,28,00,084,0,0,0,0,0,
+83,Lafayette Mayor-President,28,00,085,0,0,0,0,0,
+84,Lafayette Mayor-President,28,00,086,0,0,0,0,0,
+85,Lafayette Mayor-President,28,00,087,0,0,0,0,0,
+86,Lafayette Mayor-President,28,00,088,0,0,0,0,0,
+87,Lafayette Mayor-President,28,00,089,0,0,0,0,0,
+88,Lafayette Mayor-President,28,00,090,0,0,0,0,0,
+89,Lafayette Mayor-President,28,00,091,0,0,0,0,0,
+90,Lafayette Mayor-President,28,00,092,0,0,0,0,0,
+91,Lafayette Mayor-President,28,00,093,0,0,0,0,0,
+92,Lafayette Mayor-President,28,00,094,0,0,0,0,0,
+93,Lafayette Mayor-President,28,00,095,0,0,0,0,0,
+94,Lafayette Mayor-President,28,00,096,0,0,0,0,0,
+95,Lafayette Mayor-President,28,00,097,0,0,0,0,0,
+96,Lafayette Mayor-President,28,00,098,0,0,0,0,0,
+97,Lafayette Mayor-President,28,00,099,0,0,0,0,0,
+98,Lafayette Mayor-President,28,00,100,0,0,0,0,0,
+99,Lafayette Mayor-President,28,00,101,0,0,0,0,0,
+100,Lafayette Mayor-President,28,00,102,0,0,0,0,0,
+101,Lafayette Mayor-President,28,00,103,0,0,0,0,0,
+102,Lafayette Mayor-President,28,00,104,0,0,0,0,0,
+103,Lafayette Mayor-President,28,00,105,0,0,0,0,0,
+104,Lafayette Mayor-President,28,00,106,0,0,0,0,0,
+105,Lafayette Mayor-President,28,00,107,0,0,0,0,0,
+106,Lafayette Mayor-President,28,00,108,0,0,0,0,0,
+107,Lafayette Mayor-President,28,00,109,0,0,0,0,0,
+108,Lafayette Mayor-President,28,00,110,0,0,0,0,0,
+109,Lafayette Mayor-President,28,00,111,0,0,0,0,0,
+110,Lafayette Mayor-President,28,00,112,0,0,0,0,0,
+111,Lafayette Mayor-President,28,00,113,0,0,0,0,0,
+112,Lafayette Mayor-President,28,00,114,0,0,0,0,0,
+113,Lafayette Mayor-President,28,00,115,0,0,0,0,0,
+114,Lafayette Mayor-President,28,00,116,0,0,0,0,0,
+115,Lafayette Mayor-President,28,00,117,0,0,0,0,0,
+116,Lafayette Mayor-President,28,00,118,0,0,0,0,0,
+117,Lafayette Mayor-President,28,00,119,0,0,0,0,0,
+118,Lafayette Mayor-President,28,00,120,0,0,0,0,0,
+119,Lafayette Mayor-President,28,00,121,0,0,0,0,0,
+120,Lafayette Mayor-President,28,00,122,0,0,0,0,0,
+121,Lafayette Mayor-President,28,00,123,0,0,0,0,0,
+122,Lafayette Mayor-President,28,00,124,0,0,0,0,0,
+123,Lafayette Mayor-President,28,00,125,0,0,0,0,0,
+124,Lafayette Mayor-President,28,00,126,0,0,0,0,0,
+125,Lafayette Mayor-President,28,00,127,0,0,0,0,0,
+126,Lafayette Mayor-President,28,00,128,0,0,0,0,0,
+127,Lafayette Mayor-President,28,00,129,0,0,0,0,0,
+128,Lafayette Mayor-President,28,00,130,0,0,0,0,0,
+129,Lafayette Mayor-President,28,00,131,0,0,0,0,0,
+130,Lafayette Mayor-President,28,00,133,0,0,0,0,0,
+131,Lafayette Mayor-President,28,00,134,0,0,0,0,0,
+132,Lafayette Mayor-President,28,00,135,0,0,0,0,0,
+133,Lafayette Mayor-President,28,00,136,0,0,0,0,0,
+134,Lafayette Mayor-President,28,Early Voting,,0,0,0,0,0,
