@@ -36,7 +36,7 @@ notes = pretty_time
 cols = ["Candidate", "Votes", "Voteshare"]
 rows = []
 
-Boulet = Guillory = Swift = TotalVotes = 0
+Boulet = Guillory = Swift = Boulet_VS = Guillory_VS = Swift_VS = TotalVotes = 0
 
 precincts_total = 0
 precincts_reporting = 0
@@ -75,7 +75,7 @@ for x in Race:
         if precinct_vote_count > 0 and Ward == "Early Voting":
             early_voting = "included."
             
-TotalVotes = Boulet + Guillory + Swift + 1
+TotalVotes = Boulet + Guillory + Swift
 if TotalVotes != 0:
     Boulet_VS = Boulet / TotalVotes
     Guillory_VS = Guillory / TotalVotes
