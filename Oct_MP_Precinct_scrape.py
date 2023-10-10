@@ -42,7 +42,6 @@ rows = []
 
 for x in Race:
 	ID = x.getAttribute("ID")
-	precinct_vote_count = 0
 	
 	if ID == '64007': # --UPDATED-- with race ID for Oct. MP on 9/25/23
 		ID = 'Lafayette Mayor-President'
@@ -68,6 +67,8 @@ for x in Race:
 					case '119494': #--UPDATED-- for Swift on 9/25/23
 						Swift = int(Votes)
 			TotalVotes = Boulet+Guillory+Swift		
+			if TotalVotes > 0:
+				precincts_reporting = precincts_reporting + 1
 			#Gather precinct vote totals for each candidate
 			
 			WinVote = 0
@@ -78,8 +79,6 @@ for x in Race:
 				Winner_name = "Not yet reporting"
 			
 			elif TotalVotes > 0:
-				if Ward != "Early Voting":
-					precincts_reporting = precincts_reporting + 1
 				if Boulet > WinVote:
 					WinVote = Boulet
 					Winner_num = 1
