@@ -3,12 +3,37 @@ import xml.etree.ElementTree as Xet
 import pandas as pd
 import xml.dom.minidom
 import requests
+import json
 
 # Parsing previously downloaded XML file
 xmlparse = xml.dom.minidom.parse('sos_download.xml') #--UPDATED-- 9/25/23
 # root = xmlparse.getroot()
 # print('here')
 Race = xmlparse.getElementsByTagName("Race")
+
+# Storing SoS results timestamp
+version_timestamp = xmlparse.getElementsByTagName("VersionDateTime")[0]
+version_timestamp = version_timestamp.childNodes[0]
+temp_time = version_timestamp.nodeValue
+pretty_day = temp_time[8:10]
+pretty_hour = temp_time[11:13]
+pretty_minute = temp_time[14:16]
+am_pm = ""
+# Parsing timestamp into update message
+if int(pretty_hour) == 0: 
+	am_pm = " a.m. "
+	pretty_hour = "12"
+elif int(pretty_hour) < 12:
+	am_pm = " a.m. "
+elif int(pretty_hour) == 12:
+	am_pm = " p.m. "
+elif int(pretty_hour) > 12:
+	am_pm = " p.m. "
+	pretty_hour = int(pretty_hour) - 12
+pretty_time = "Last Updated on Oct. " + str(pretty_day) + " at " + str(pretty_hour) + ":" + str(pretty_minute) + am_pm
+notes = pretty_time
+
+precincts_reporting = 0
 
 # Prepping for pandas dataframe
 cols = ["ID", "Parish", "Ward", "Precinct", "Boulet", "Guillory",
@@ -17,6 +42,8 @@ rows = []
 
 for x in Race:
 	ID = x.getAttribute("ID")
+	precinct_vote_count = 0
+	
 	if ID == '64007': # --UPDATED-- with race ID for Oct. MP on 9/25/23
 		ID = 'Lafayette Mayor-President'
 		Parish = x.getAttribute("Parish")
@@ -51,6 +78,8 @@ for x in Race:
 				Winner_name = "Not yet reporting"
 			
 			elif TotalVotes > 0:
+				if Ward != "Early Voting":
+					precincts_reporting = precincts_reporting + 1
 				if Boulet > WinVote:
 					WinVote = Boulet
 					Winner_num = 1
@@ -91,3 +120,14 @@ for x in Race:
 Oct_MP_df = pd.DataFrame(rows, columns=cols)
 # Writing dataframe to csv
 Oct_MP_df.to_csv('Oct_MP_Precinct_results.csv')
+
+# Creating metadata json file
+notes = notes + "with " + str(precincts_reporting) + " out of 134 precincts reporting. Early voting not included."
+dictionary = {
+	"annotate" : {
+		"notes" : notes
+	}
+}
+json_object = json.dumps(dictionary, indent=4)
+with open('Oct_MP_Precinct_results.json', "w") as outfile:
+	outfile.write(json_object)
