@@ -3,6 +3,7 @@ import xml.etree.ElementTree as Xet
 import pandas as pd
 import xml.dom.minidom
 import requests
+import json
   
 # Parsing previously downloaded XML file
 xmlparse = xml.dom.minidom.parse('sos_download.xml') #--UPDATED-- 9/25/23
@@ -39,9 +40,11 @@ Boulet = Guillory = Swift = TotalVotes = 0
 
 precincts_total = 0
 precincts_reporting = 0
+early_voting = "not included."
 
 for x in Race:
     ID = x.getAttribute("ID")
+    precinct_vote_count = 0
     if ID == '64007': # --UPDATED-- with race ID for Oct. MP on 9/25/23
         ID = 'Lafayette Mayor-President'
         Parish = x.getAttribute("Parish")
@@ -54,7 +57,9 @@ for x in Race:
             CID = a.getAttribute("ID")
             # print(CID)
             Votes = a.getAttribute("VoteTotal")
-            if Votes == "": Votes = 0
+            if Votes == "": 
+                Votes = 0                
+            precinct_vote_count = precinct_vote_count + int(Votes)
             match CID:
                 case '118969': #--UPDATED-- for Boulet on 9/25/23
                     Boulet = Boulet + int(Votes)
@@ -62,6 +67,13 @@ for x in Race:
                     Guillory = Guillory + int(Votes)
                 case '119494': #--UPDATED-- for Swift on 9/25/23
                     Swift = Swift + int(Votes)
+        if Ward != "Early Voting":
+            precincts_total = precincts_total + 1
+        if precinct_vote_count > 0 and Ward != "Early Voting":
+            precincts_reporting = precincts_reporting + 1
+        if precinct_vote_count > 0 and Ward == "Early Voting":
+            early_voting = "included."
+            
         TotalVotes = TotalVotes + Boulet + Guillory + Swift
         #Gather precinct vote totals for each candidate 
 
@@ -77,8 +89,9 @@ Oct_MP_df = pd.DataFrame(rows, columns=cols)
 # Writing dataframe to csv
 Oct_MP_df.to_csv('Oct_MP_Totals_results.csv')
 
+
 # Creating metadata json file
-notes = notes + "with " + str(precincts_reporting) + " out of 134 precincts reporting. Does not include early voting."
+notes = notes + "with " + str(precincts_reporting) + " out of " + str(precincts_total) + " precincts reporting. Early voting " + early_voting
 dictionary = {
 	"annotate" : {
 		"notes" : notes

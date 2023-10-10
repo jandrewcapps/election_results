@@ -3,7 +3,6 @@ import xml.etree.ElementTree as Xet
 import pandas as pd
 import xml.dom.minidom
 import requests
-import json
 
 # Parsing previously downloaded XML file
 xmlparse = xml.dom.minidom.parse('sos_download.xml') #--UPDATED-- 9/25/23
