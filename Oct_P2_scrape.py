@@ -78,10 +78,10 @@ if TotalVotes != 0:
     Morales_VS = Morales / TotalVotes
     Richard_VS = Richard / TotalVotes
 
-rows.append({"Candidate": "Morales",
+rows.append({"Candidate": "Sidney Morales",
         "Votes": Morales, 
         "Voteshare": Morales_VS})        
-rows.append({"Candidate": "Richard",
+rows.append({"Candidate": "Donald Richard",
         "Votes": Richard, 
         "Voteshare": Richard_VS})
 #Add total result to array
