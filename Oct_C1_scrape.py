@@ -3,6 +3,7 @@ import xml.etree.ElementTree as Xet
 import pandas as pd
 import xml.dom.minidom
 import requests
+import json
   
 # Parsing previously downloaded XML file
 xmlparse = xml.dom.minidom.parse('sos_download.xml') #--UPDATED-- 9/25/23
@@ -10,13 +11,41 @@ xmlparse = xml.dom.minidom.parse('sos_download.xml') #--UPDATED-- 9/25/23
 # print('here')
 Race = xmlparse.getElementsByTagName("Race")
 
-cols = ["Candidate", "Votes"]
+# Storing SoS results timestamp
+version_timestamp = xmlparse.getElementsByTagName("VersionDateTime")[0]
+version_timestamp = version_timestamp.childNodes[0]
+temp_time = version_timestamp.nodeValue
+pretty_day = temp_time[8:10]
+pretty_hour = temp_time[11:13]
+pretty_minute = temp_time[14:16]
+am_pm = ""
+# Parsing timestamp into update message
+if int(pretty_hour) == 0: 
+	am_pm = " a.m. "
+	pretty_hour = "12"
+elif int(pretty_hour) < 12:
+	am_pm = " a.m. "
+elif int(pretty_hour) == 12:
+	am_pm = " p.m. "
+elif int(pretty_hour) > 12:
+	am_pm = " p.m. "
+	pretty_hour = int(pretty_hour) - 12
+pretty_time = "Last Updated on Oct. " + pretty_day + " at " + pretty_hour + ":" + pretty_minute + am_pm
+notes = pretty_time
+
+cols = ["Candidate", "Votes", "Voteshare"]
 rows = []
 
-Broussard = Hardy = Harrison = Matthieu_Robichaux = TotalVotes = 0
+Broussard = Hardy = Harrison = Matthieu_Robichaux = Broussard_VS = Hardy_VS = Harrison_VS = Matthieu_Robichaux_VS = TotalVotes = 0
+
+precincts_total = 0
+precincts_reporting = 0
+early_voting = "not included."
 
 for x in Race:
     ID = x.getAttribute("ID")
+    precinct_vote_count = 0
+
     if ID == '64002': # --UPDATED-- with race ID for Oct. C1 on 9/25/23
         ID = 'City Council D-1'
         Parish = x.getAttribute("Parish")
@@ -39,20 +68,47 @@ for x in Race:
                     Harrison = Harrison + int(Votes)
                 case '119667': #--UPDATED-- for Matthieu-Robichaux on 9/25/23
                 	Matthieu_Robichaux = Matthieu_Robichaux + int(Votes)
-        TotalVotes = TotalVotes + Broussard + Hardy + Harrison + Matthieu_Robichaux       
-        #Gather precinct vote totals for each candidate 
+            precinct_vote_count = precinct_vote_count + int(Votes)
 
-rows.append({"Candidate": "Broussard",
-        "Votes": Broussard})        
-rows.append({"Candidate": "Hardy",
-        "Votes": Hardy})
-rows.append({"Candidate": "Harrison",
-        "Votes": Harrison})
-rows.append({"Candidate": "Matthieu-Robichaux",
-        "Votes": Matthieu_Robichaux})
+        if Ward != "Early Voting":
+            precincts_total = precincts_total + 1
+        if precinct_vote_count > 0 and Ward != "Early Voting":
+            precincts_reporting = precincts_reporting + 1
+        if precinct_vote_count > 0 and Ward == "Early Voting":
+            early_voting = "included."
+            
+TotalVotes = Broussard + Hardy + Harrison + Matthieu_Robichaux
+if TotalVotes != 0:
+    Broussard_VS = Broussard / TotalVotes
+    Hardy_VS = Hardy / TotalVotes
+    Harrison_VS = Harrison / TotalVotes
+    Matthieu_Robichaux_VS = Matthieu_Robichaux / TotalVotes
+    
+rows.append({"Candidate": "Elroy Broussard",
+        "Votes": Broussard,
+        "Voteshare": Broussard_VS})        
+rows.append({"Candidate": "Rickey Hardy",
+        "Votes": Hardy,
+        "Voteshare": Hardy_VS})
+rows.append({"Candidate": "Kris Harrison",
+        "Votes": Harrison,
+        "Voteshare": Harrison_VS})
+rows.append({"Candidate": "Melissa Matthieu-Robichaux",
+        "Votes": Matthieu_Robichaux,
+        "Voteshare": Matthieu_Robichaux_VS})
 #Add total result to array
                 
 Oct_C1_df = pd.DataFrame(rows, columns=cols)
 # Writing dataframe to csv
 Oct_C1_df.to_csv('Oct_C1_results.csv')
 
+# Creating metadata json file
+notes = notes + "with " + str(precincts_reporting) + " out of " + str(precincts_total) + " precincts reporting. Early voting " + early_voting
+dictionary = {
+	"annotate" : {
+		"notes" : notes
+	}
+}
+json_object = json.dumps(dictionary, indent=4)
+with open('Oct_C1_results.json', "w") as outfile:
+	outfile.write(json_object)
