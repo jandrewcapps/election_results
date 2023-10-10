@@ -49,7 +49,7 @@ for x in Race:
 			Winner_num = 0
 			
 			if TotalVotes == 0:
-				Winner_name = "Results pending"
+				Winner_name = "Not yet reporting"
 			
 			elif TotalVotes > 0:
 				if Boulet > WinVote:
