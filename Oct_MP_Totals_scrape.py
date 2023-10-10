@@ -33,7 +33,7 @@ elif int(pretty_hour) > 12:
 pretty_time = "Last Updated on Oct. " + pretty_day + " at " + pretty_hour + ":" + pretty_minute + am_pm
 notes = pretty_time
 
-cols = ["Candidate", "Votes"]
+cols = ["Candidate", "Votes", "Voteshare"]
 rows = []
 
 Boulet = Guillory = Swift = TotalVotes = 0
@@ -59,7 +59,6 @@ for x in Race:
             Votes = a.getAttribute("VoteTotal")
             if Votes == "": 
                 Votes = 0                
-            precinct_vote_count = precinct_vote_count + int(Votes)
             match CID:
                 case '118969': #--UPDATED-- for Boulet on 9/25/23
                     Boulet = Boulet + int(Votes)
@@ -67,6 +66,8 @@ for x in Race:
                     Guillory = Guillory + int(Votes)
                 case '119494': #--UPDATED-- for Swift on 9/25/23
                     Swift = Swift + int(Votes)
+            precinct_vote_count = precinct_vote_count + int(Votes)
+        
         if Ward != "Early Voting":
             precincts_total = precincts_total + 1
         if precinct_vote_count > 0 and Ward != "Early Voting":
@@ -74,15 +75,21 @@ for x in Race:
         if precinct_vote_count > 0 and Ward == "Early Voting":
             early_voting = "included."
             
-        TotalVotes = TotalVotes + Boulet + Guillory + Swift
-        #Gather precinct vote totals for each candidate 
+TotalVotes = Boulet + Guillory + Swift + 1
+if TotalVotes != 0:
+    Boulet_VS = Boulet / TotalVotes
+    Guillory_VS = Guillory / TotalVotes
+    Swift_VS = Swift / TotalVotes
 
 rows.append({"Candidate": "Boulet",
-        "Votes": Boulet})        
+        "Votes": Boulet,
+        "Voteshare": Boulet_VS})        
 rows.append({"Candidate": "Guillory",
-        "Votes": Guillory})
+        "Votes": Guillory,
+        "Voteshare": Guillory_VS})
 rows.append({"Candidate": "Swift",
-        "Votes": Swift})
+        "Votes": Swift,
+        "Voteshare": Swift_VS})
 #Add total result to array
                 
 Oct_MP_df = pd.DataFrame(rows, columns=cols)
