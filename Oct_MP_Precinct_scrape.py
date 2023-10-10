@@ -11,36 +11,10 @@ xmlparse = xml.dom.minidom.parse('sos_download.xml') #--UPDATED-- 9/25/23
 # print('here')
 Race = xmlparse.getElementsByTagName("Race")
 
-# Storing SoS results timestamp
-version_timestamp = xmlparse.getElementsByTagName("VersionDateTime")[0]
-version_timestamp = version_timestamp.childNodes[0]
-temp_time = version_timestamp.nodeValue
-pretty_day = temp_time[8:10]
-pretty_hour = temp_time[11:13]
-pretty_minute = temp_time[14:16]
-am_pm = ""
-# Parsing timestamp into update message
-if int(pretty_hour) == 0: 
-	am_pm = " a.m. "
-	pretty_hour = "12"
-elif int(pretty_hour) < 12:
-	am_pm = " a.m. "
-elif int(pretty_hour) == 12:
-	am_pm = " p.m. "
-elif int(pretty_hour) > 12:
-	am_pm = " p.m. "
-	pretty_hour = int(pretty_hour) - 12
-pretty_time = "Last Updated on Oct. " + pretty_day + " at " + pretty_hour + ":" + pretty_minute + am_pm
-notes = pretty_time
-
-print(pretty_time)
-
 # Prepping for pandas dataframe
 cols = ["ID", "Parish", "Ward", "Precinct", "Boulet", "Guillory",
 				"Swift", "Total", "Winner_num", "Winner_name"]
 rows = []
-
-precincts_reporting = 0
 
 for x in Race:
 	ID = x.getAttribute("ID")
@@ -78,7 +52,6 @@ for x in Race:
 				Winner_name = "Results pending"
 			
 			elif TotalVotes > 0:
-				precincts_reporting = precincts_reporting + 1
 				if Boulet > WinVote:
 					WinVote = Boulet
 					Winner_num = 1
@@ -119,14 +92,3 @@ for x in Race:
 Oct_MP_df = pd.DataFrame(rows, columns=cols)
 # Writing dataframe to csv
 Oct_MP_df.to_csv('Oct_MP_Precinct_results.csv')
-
-# Creating metadata json file
-notes = notes + "with " + str(precincts_reporting) + " out of 134 precincts reporting. Does not include early voting."
-dictionary = {
-	"annotate" : {
-		"notes" : notes
-	}
-}
-json_object = json.dumps(dictionary, indent=4)
-with open('Oct_MP_Precinct_results.json', "w") as outfile:
-	outfile.write(json_object)
