@@ -65,7 +65,7 @@ for x in Race:
                 case '119263': #--UPDATED-- for Rubin on 9/25/23
                     Rubin = Rubin + int(Votes)
                 case '119614': #--UPDATED-- for Williams on 9/25/23
-                    William = Williams + int(Votes)
+                    Williams = Williams + int(Votes)
             precinct_vote_count = precinct_vote_count + int(Votes)
 
         if Ward != "Early Voting":
