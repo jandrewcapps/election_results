@@ -116,24 +116,17 @@ for x in Race:
 					"Winner_name": Winner_name})
 			#Add precinct result to array
 
-notes = notes + "with " + str(precincts_reporting) + " out of 134 precincts reporting. Does not include early voting."
-
 Oct_MP_df = pd.DataFrame(rows, columns=cols)
 # Writing dataframe to csv
-#Oct_MP_df.to_json('Oct_MP_Precinct_results.json', "index")
+Oct_MP_df.to_csv('Oct_MP_Precinct_results.csv')
 
-
+# Creating metadata json file
+notes = notes + "with " + str(precincts_reporting) + " out of 134 precincts reporting. Does not include early voting."
 dictionary = {
 	"annotate" : {
 		"notes" : notes
 	}
 }
-
-# Serializing json
 json_object = json.dumps(dictionary, indent=4)
-# Writing to sample.json
 with open('Oct_MP_Precinct_results.json', "w") as outfile:
 	outfile.write(json_object)
-with open('Oct_MP_Precinct_results.json', "a") as outfile:
-    outfile.write(json.dumps(Oct_MP_df.to_dict(orient="records"), indent=4))
-# "features" : Oct_MP_df.to_json("index")
