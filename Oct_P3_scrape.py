@@ -30,7 +30,7 @@ elif int(pretty_hour) == 12:
 elif int(pretty_hour) > 12:
 	am_pm = " p.m. "
 	pretty_hour = int(pretty_hour) - 12
-pretty_time = "Last Updated on Oct. " + pretty_day + " at " + pretty_hour + ":" + pretty_minute + am_pm
+pretty_time = "Last Updated on Oct. " + str(pretty_day) + " at " + str(pretty_hour) + ":" + str(pretty_minute) + am_pm
 notes = pretty_time
 
 cols = ["Candidate", "Votes", "Voteshare"]
@@ -77,9 +77,9 @@ for x in Race:
             
 TotalVotes = Hughes + Monts + Stansbury
 if TotalVotes != 0:
-    Hughes_VS = Hughes / TotalVotes
-    Monts_VS = Monts / TotalVotes
-    Stansbury_VS = Stansbury / TotalVotes
+    Hughes_VS = Hughes / TotalVotes * 100
+    Monts_VS = Monts / TotalVotes * 100
+    Stansbury_VS = Stansbury / TotalVotes * 100
 
 rows.append({"Candidate": "Terry Hughes",
         "Votes": Hughes,

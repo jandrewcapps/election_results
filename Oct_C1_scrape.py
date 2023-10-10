@@ -30,7 +30,7 @@ elif int(pretty_hour) == 12:
 elif int(pretty_hour) > 12:
 	am_pm = " p.m. "
 	pretty_hour = int(pretty_hour) - 12
-pretty_time = "Last Updated on Oct. " + pretty_day + " at " + pretty_hour + ":" + pretty_minute + am_pm
+pretty_time = "Last Updated on Oct. " + str(pretty_day) + " at " + str(pretty_hour) + ":" + str(pretty_minute) + am_pm
 notes = pretty_time
 
 cols = ["Candidate", "Votes", "Voteshare"]
@@ -79,10 +79,10 @@ for x in Race:
             
 TotalVotes = Broussard + Hardy + Harrison + Matthieu_Robichaux
 if TotalVotes != 0:
-    Broussard_VS = Broussard / TotalVotes
-    Hardy_VS = Hardy / TotalVotes
-    Harrison_VS = Harrison / TotalVotes
-    Matthieu_Robichaux_VS = Matthieu_Robichaux / TotalVotes
+    Broussard_VS = Broussard / TotalVotes  * 100
+    Hardy_VS = Hardy / TotalVotes * 100
+    Harrison_VS = Harrison / TotalVotes * 100
+    Matthieu_Robichaux_VS = Matthieu_Robichaux / TotalVotes * 100
     
 rows.append({"Candidate": "Elroy Broussard",
         "Votes": Broussard,
