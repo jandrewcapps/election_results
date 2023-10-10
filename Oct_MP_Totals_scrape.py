@@ -45,6 +45,7 @@ early_voting = "not included."
 for x in Race:
     ID = x.getAttribute("ID")
     precinct_vote_count = 0
+    
     if ID == '64007': # --UPDATED-- with race ID for Oct. MP on 9/25/23
         ID = 'Lafayette Mayor-President'
         Parish = x.getAttribute("Parish")
