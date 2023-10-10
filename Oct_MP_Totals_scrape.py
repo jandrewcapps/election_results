@@ -78,9 +78,9 @@ for x in Race:
             
 TotalVotes = Boulet + Guillory + Swift
 if TotalVotes != 0:
-    Boulet_VS = Boulet / TotalVotes
-    Guillory_VS = Guillory / TotalVotes
-    Swift_VS = Swift / TotalVotes
+    Boulet_VS = Boulet / TotalVotes * 100
+    Guillory_VS = Guillory / TotalVotes * 100
+    Swift_VS = Swift / TotalVotes * 100
 
 rows.append({"Candidate": "Monique Blanco Boulet",
         "Votes": Boulet,
