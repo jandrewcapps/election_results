@@ -75,8 +75,8 @@ for x in Race:
             
 TotalVotes = Boudreaux + Ross
 if TotalVotes != 0:
-    Boudreaux_VS = Boudreaux / TotalVotes
-    Ross_VS = Ross / TotalVotes
+    Boudreaux_VS = Boudreaux / TotalVotes * 100
+    Ross_VS = Ross / TotalVotes * 100
 
 rows.append({"Candidate": "Kenneth Boudreaux",
         "Votes": Boudreaux,

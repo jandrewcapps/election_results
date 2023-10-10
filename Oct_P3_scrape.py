@@ -77,9 +77,9 @@ for x in Race:
             
 TotalVotes = Hughes + Monts + Stansbury
 if TotalVotes != 0:
-    Hughes_VS = Hughes / TotalVotes
-    Monts_VS = Monts / TotalVotes
-    Stansbury_VS = Stansbury / TotalVotes
+    Hughes_VS = Hughes / TotalVotes * 100
+    Monts_VS = Monts / TotalVotes * 100
+    Stansbury_VS = Stansbury / TotalVotes * 100
 
 rows.append({"Candidate": "Terry Hughes",
         "Votes": Hughes,

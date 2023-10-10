@@ -75,8 +75,8 @@ for x in Race:
             
 TotalVotes = Morales + Richard
 if TotalVotes != 0:
-    Morales_VS = Morales / TotalVotes
-    Richard_VS = Richard / TotalVotes
+    Morales_VS = Morales / TotalVotes * 100
+    Richard_VS = Richard / TotalVotes * 100
 
 rows.append({"Candidate": "Sidney Morales",
         "Votes": Morales, 

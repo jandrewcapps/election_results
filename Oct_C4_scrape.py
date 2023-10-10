@@ -75,8 +75,8 @@ for x in Race:
             
 TotalVotes = Hooks + LeBlanc
 if TotalVotes != 0:
-    Hooks_VS = Hooks / TotalVotes
-    LeBlanc_VS = LeBlanc / TotalVotes
+    Hooks_VS = Hooks / TotalVotes * 100
+    LeBlanc_VS = LeBlanc / TotalVotes * 100
     
 rows.append({"Candidate": "Thomas Hooks",
         "Votes": Hooks,

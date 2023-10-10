@@ -79,10 +79,10 @@ for x in Race:
             
 TotalVotes = Broussard + Hardy + Harrison + Matthieu_Robichaux
 if TotalVotes != 0:
-    Broussard_VS = Broussard / TotalVotes
-    Hardy_VS = Hardy / TotalVotes
-    Harrison_VS = Harrison / TotalVotes
-    Matthieu_Robichaux_VS = Matthieu_Robichaux / TotalVotes
+    Broussard_VS = Broussard / TotalVotes  * 100
+    Hardy_VS = Hardy / TotalVotes * 100
+    Harrison_VS = Harrison / TotalVotes * 100
+    Matthieu_Robichaux_VS = Matthieu_Robichaux / TotalVotes * 100
     
 rows.append({"Candidate": "Elroy Broussard",
         "Votes": Broussard,

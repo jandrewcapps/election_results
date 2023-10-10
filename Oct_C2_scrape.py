@@ -75,8 +75,8 @@ for x in Race:
             
 TotalVotes = Arabie + Naquin
 if TotalVotes != 0:
-    Arabie_VS = Arabie / TotalVotes
-    Naquin_VS = Naquin / TotalVotes
+    Arabie_VS = Arabie / TotalVotes * 100
+    Naquin_VS = Naquin / TotalVotes * 100
     
 rows.append({"Candidate": "Shelby Arabie",
         "Votes": Arabie,

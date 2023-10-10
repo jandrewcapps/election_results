@@ -77,9 +77,9 @@ for x in Race:
             
 TotalVotes = Gabriel + Rubin + Williams
 if TotalVotes != 0:
-    Gabriel_VS = Gabriel / TotalVotes
-    Rubin_VS = Rubin / TotalVotes
-    Williams_VS = Williams / TotalVotes
+    Gabriel_VS = Gabriel / TotalVotes * 100
+    Rubin_VS = Rubin / TotalVotes * 100
+    Williams_VS = Williams / TotalVotes * 100
     
 rows.append({"Candidate": "Clyde Gabriel",
         "Votes": Gabriel,
