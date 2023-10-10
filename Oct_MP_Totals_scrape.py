@@ -82,13 +82,13 @@ if TotalVotes != 0:
     Guillory_VS = Guillory / TotalVotes
     Swift_VS = Swift / TotalVotes
 
-rows.append({"Candidate": "Boulet",
+rows.append({"Candidate": "Monique Blanco Boulet",
         "Votes": Boulet,
         "Voteshare": Boulet_VS})        
-rows.append({"Candidate": "Guillory",
+rows.append({"Candidate": "Josh Guillory",
         "Votes": Guillory,
         "Voteshare": Guillory_VS})
-rows.append({"Candidate": "Swift",
+rows.append({"Candidate": "Jan Swift",
         "Votes": Swift,
         "Voteshare": Swift_VS})
 #Add total result to array
