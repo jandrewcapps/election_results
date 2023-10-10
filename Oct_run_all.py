@@ -28,5 +28,5 @@ os.system('python3 Oct_P2_scrape.py')
 os.system('python3 Oct_P3_scrape.py')
 os.system('python3 Oct_P5_scrape.py')
 
-print ("Results updated as of: ")
+print ("Last run at: ")
 print (strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
