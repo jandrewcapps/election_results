@@ -135,5 +135,5 @@ json_object = json.dumps(dictionary, indent=4)
 with open('Oct_MP_Precinct_results.json', "w") as outfile:
 	outfile.write(json_object)
 with open('Oct_MP_Precinct_results.json', "a") as outfile:
-    outfile.write(json.dumps(Oct_MP_df.to_dict(orient="index"), indent=4))
+    outfile.write(json.dumps(Oct_MP_df.to_dict(orient="records"), indent=4))
 # "features" : Oct_MP_df.to_json("index")
