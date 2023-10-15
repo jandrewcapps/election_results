@@ -79,29 +79,43 @@ for x in Race:
 				Winner_name = "Not yet reporting"
 			
 			elif TotalVotes > 0:
-				if Boulet > WinVote:
+				if Boulet > (TotalVotes / 2):
 					WinVote = Boulet
 					Winner_num = 1
 					Winner_name = "Monique Blanco Boulet"
-				if Guillory > WinVote:
+				if Guillory > (TotalVotes / 2):
 					WinVote = Guillory
 					Winner_num = 3
 					Winner_name = "Josh Guillory"
-				if Swift > WinVote:
+				if Swift > (TotalVotes / 2):
 					WinVote = Swift
 					Winner_num = 2
 					Winner_name = "Jan Swift"
-				if WinVote == Boulet:
-					if Boulet == Guillory:
-						Winner_num = 0
-						Winner_name = "Tie"
-					if Boulet == Swift:
-						Winner_num = 0
-						Winner_name = "Tie"
-				if WinVote == Guillory:
-					if Guillory == Swift:
-						Winner_num = 0
-						Winner_name = "Tie"			   
+				if WinVote == 0:
+					if Boulet > WinVote:
+						WinVote = Boulet
+						Winner_num = 1
+						Winner_name = "Monique Blanco Boulet - No Majority"
+					if Guillory > WinVote:
+						WinVote = Guillory
+						Winner_num = 3
+						Winner_name = "Josh Guillory - No Majority"
+					if Swift > WinVote:
+						WinVote = Swift
+						Winner_num = 2
+						Winner_name = "Jan Swift - No Majority"
+					
+					if WinVote == Boulet:
+						if Boulet == Guillory:
+							Winner_num = 0
+							Winner_name = "Tie - No Majority"
+						if Boulet == Swift:
+							Winner_num = 0
+							Winner_name = "Tie - No Majority"
+					if WinVote == Guillory:
+						if Guillory == Swift:
+							Winner_num = 0
+							Winner_name = "Tie - No Majority"			   
 			#Determine each precinct winner and identify potential tie cases	
 
 			rows.append({"ID": ID,
