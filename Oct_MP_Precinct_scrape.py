@@ -85,24 +85,24 @@ for x in Race:
 					Winner_name = "Monique Blanco Boulet"
 				if Guillory > (TotalVotes / 2):
 					WinVote = Guillory
-					Winner_num = 3
+					Winner_num = 5
 					Winner_name = "Josh Guillory"
 				if Swift > (TotalVotes / 2):
 					WinVote = Swift
-					Winner_num = 2
+					Winner_num = 3
 					Winner_name = "Jan Swift"
 				if WinVote == 0:
 					if Boulet > WinVote:
 						WinVote = Boulet
-						Winner_num = 1
+						Winner_num = 2
 						Winner_name = "Monique Blanco Boulet - No Majority"
 					if Guillory > WinVote:
 						WinVote = Guillory
-						Winner_num = 3
+						Winner_num = 6
 						Winner_name = "Josh Guillory - No Majority"
 					if Swift > WinVote:
 						WinVote = Swift
-						Winner_num = 2
+						Winner_num = 4
 						Winner_name = "Jan Swift - No Majority"
 					
 					if WinVote == Boulet:
