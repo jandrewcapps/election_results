@@ -32,8 +32,12 @@ elif int(pretty_hour) > 12:
 	pretty_hour = int(pretty_hour) - 12
 pretty_time = "Last Updated on Oct. " + str(pretty_day) + " at " + str(pretty_hour) + ":" + str(pretty_minute) + am_pm
 notes = pretty_time
+# End of pretty time function
 
+Boulet = Guillory = Boulet_VS = Guillory_VS = TotalVotes = 0
+precincts_total = 0
 precincts_reporting = 0
+early_voting = "not included."
 
 # Prepping for pandas dataframe
 cols = ["ID", "Parish", "Ward", "Precinct", "Boulet", "Guillory",

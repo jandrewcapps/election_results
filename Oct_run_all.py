@@ -15,7 +15,7 @@ URL = "https://voterportal.sos.la.gov/api/MediaRequests/PrecinctVotes/2023-10-14
 #--UPDATED-- for 10/14/23 election on 9/25/23
 
 response = requests.get(URL)
-with open('sos_download.xml', 'wb') as file: #--UPDATED-- 9/25/23
+with open('Oct_sos_download.xml', 'wb') as file: #--UPDATED-- 9/25/23
     file.write(response.content)
 
 os.system('python3 Oct_MP_Precinct_scrape.py')
