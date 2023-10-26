@@ -11,12 +11,12 @@ import time
 from time import strftime
 
 
-URL = "https://voterportal.sos.la.gov/api/MediaRequests/PrecinctVotes/2023-10-14/fmy5i4ikXTSxn2XaK5oB/yJCDurb0Q3XeVDIjkqBUtLCDl38FFtCYJVcGfM14"
+#URL = "https://voterportal.sos.la.gov/api/MediaRequests/PrecinctVotes/2023-10-14/fmy5i4ikXTSxn2XaK5oB/yJCDurb0Q3XeVDIjkqBUtLCDl38FFtCYJVcGfM14"
 #--UPDATED-- for 10/14/23 election on 9/25/23
 
-response = requests.get(URL)
-with open('Oct_sos_download.xml', 'wb') as file: #--UPDATED-- 9/25/23
-    file.write(response.content)
+#response = requests.get(URL)
+#with open('Oct_sos_download.xml', 'wb') as file: #--UPDATED-- 9/25/23
+#    file.write(response.content)
 
 os.system('python3 Oct_MP_Precinct_scrape.py')
 os.system('python3 Oct_MP_Totals_scrape.py')

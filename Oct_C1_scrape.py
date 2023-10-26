@@ -6,7 +6,7 @@ import requests
 import json
   
 # Parsing previously downloaded XML file
-xmlparse = xml.dom.minidom.parse('sos_download.xml') #--UPDATED-- 9/25/23
+xmlparse = xml.dom.minidom.parse('Oct_sos_download.xml') #--UPDATED-- 9/25/23
 # root = xmlparse.getroot()
 # print('here')
 Race = xmlparse.getElementsByTagName("Race")
@@ -53,12 +53,16 @@ for x in Race:
         Precinct = x.getAttribute("Precinct")
         #Gather precinct & race ID info
         
+        candidate_count = no_vote_candidates = 0
         Choice = x.getElementsByTagName("Choice") #'Choice' is SoS for candidate/ballot option
         for a in Choice:
+            candidate_count = candidate_count + 1
             CID = a.getAttribute("ID")
             # print(CID)
             Votes = a.getAttribute("VoteTotal")
-            if Votes == "": Votes = 0
+            if Votes == "": 
+                no_vote_candidates = no_vote_candidates + 1
+                Votes = 0
             match CID:
                 case '118764': #--UPDATED-- for Broussard on 9/25/23
                     Broussard = Broussard + int(Votes)
@@ -72,9 +76,10 @@ for x in Race:
 
         if Ward != "Early Voting":
             precincts_total = precincts_total + 1
-        if precinct_vote_count > 0 and Ward != "Early Voting":
+        
+        if candidate_count > no_vote_candidates and Ward != "Early Voting":
             precincts_reporting = precincts_reporting + 1
-        if precinct_vote_count > 0 and Ward == "Early Voting":
+        if candidate_count > no_vote_candidates and Ward == "Early Voting":
             early_voting = "included."
             
 TotalVotes = Broussard + Hardy + Harrison + Matthieu_Robichaux

@@ -128,8 +128,8 @@ Nov_MP_precincts_df.to_csv('Nov_MP_Precinct_results.csv')
 # Determine Parishwide voteshares
 TotalVotes = Boulet_Tot + Guillory_Tot
 if TotalVotes > 0:
-    Boulet_VS = Boulet_Tot / TotalVotes
-    Guillory_VS = Guillory_Tot / TotalVotes
+    Boulet_VS = (Boulet_Tot / TotalVotes) * 100
+    Guillory_VS = (Guillory_Tot / TotalVotes) * 100
 
 # Add parishwide results to TOTALS array
 total_rows.append({"Candidate": "Monique Blanco Boulet",
