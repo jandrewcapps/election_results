@@ -1,6 +1,7 @@
 # Importing the required libraries
 import xml.etree.ElementTree as Xet
 import pandas as pd
+import numpy as np
 import xml.dom.minidom
 import requests
 import json
@@ -39,6 +40,16 @@ precincts_total = 134
 precincts_reporting = 0
 early_voting = "not included."
 
+# Prepping SWING precincts array for print() reporting
+i = 0
+precincts = []
+while i < 137:
+	precincts.append("-")
+	i = i + 1
+swing_numbers = [32, 41, 48, 75, 77, 92, 113, 123]
+for a in swing_numbers:
+	precincts[a] = "Not reporting"
+
 # Prepping PRECINCTS for pandas dataframe
 cols = ["ID", "Parish", "Ward", "Precinct", "Boulet", "Guillory", "Total", "Boulet_VS", "Guillory_VS", "Winner_num", "Winner_name"]
 rows = []
@@ -46,7 +57,6 @@ rows = []
 # Prepping TOTALS for pandas dataframe
 total_cols = ["Candidate", "Votes", "Voteshare"]
 total_rows = []
-
 
 # Iterating through Precinct results from SoS download
 for x in Race:
@@ -61,75 +71,96 @@ for x in Race:
 			Precinct = int(Precinct)
 			#Gather precinct & race ID info
 			
-			Boulet = Guillory = 0
-			Choice = x.getElementsByTagName("Choice") #'Choice' is SoS for candidate/ballot option
-			for a in Choice:
-				CID = a.getAttribute("ID")
-				# print(CID)
-				Votes = a.getAttribute("VoteTotal")
-				if Votes == "": Votes = 0
-				match CID:
-					case '120239': #--UPDATED-- for Boulet on 10/26/23
-						Boulet = int(Votes)
-						Boulet_Tot = Boulet_Tot + Boulet
-					case '120240': #--UPDATED-- for Guillory on 10/26/23
-						Guillory = int(Votes)
-						Guillory_Tot = Guillory_Tot + Guillory
-			
-			# Sum votes within precinct and add to parishwide total vote count
-			PrecinctVotes = Boulet + Guillory		
-			
-			# Check for precinct reporting and Early Voting status
-			if PrecinctVotes > 0 and Ward != "Early Voting":
-				precincts_reporting = precincts_reporting + 1
-			
-			# Reset precinct winner
-			WinVote = 0
-			Winner_name = ""
-			Winner_num = 0
-			
-			# Determine new precinct winner or not reporting
-			Boulet_VS = 0
-			Guillory_VS = 0
-			if PrecinctVotes == 0:
-				Winner_name = "Not yet reporting"
-			elif PrecinctVotes > 0:
-				Boulet_VS = Boulet / PrecinctVotes
-				Guillory_VS = Guillory / PrecinctVotes
-				if Boulet > Guillory:
-					WinVote = Boulet
-					Winner_num = 1
-					Winner_name = "Monique Blanco Boulet"
-				elif Guillory > Boulet:
-					WinVote = Guillory
-					Winner_num = 3
-					Winner_name = "Josh Guillory"
-				elif Boulet == Guillory:
-					Winner_num = 2
-					Winner_name = "Tie"		   
+		Boulet = Guillory = 0
+		Choice = x.getElementsByTagName("Choice") #'Choice' is SoS for candidate/ballot option
+		for a in Choice:
+			CID = a.getAttribute("ID")
+			# print(CID)
+			Votes = a.getAttribute("VoteTotal")
+			if Votes == "": Votes = 0
+			match CID:
+				case '120239': #--UPDATED-- for Boulet on 10/26/23
+					Boulet = int(Votes)
+					Boulet_Tot = Boulet_Tot + Boulet
+				case '120240': #--UPDATED-- for Guillory on 10/26/23
+					Guillory = int(Votes)
+					Guillory_Tot = Guillory_Tot + Guillory
+		
+		# Sum votes within precinct and add to parishwide total vote count
+		PrecinctVotes = Boulet + Guillory		
+		
+		# Check for precinct reporting and Early Voting status
+		if PrecinctVotes > 0 and Ward != "Early Voting":
+			precincts_reporting = precincts_reporting + 1
+		
+		# Reset precinct winner
+		WinVote = 0
+		Winner_name = ""
+		Winner_num = 0
+		
+		# Determine new precinct winner or not reporting
+		Boulet_VS = 0
+		Guillory_VS = 0
+		if PrecinctVotes == 0:
+			Winner_name = "Not yet reporting"
+		elif PrecinctVotes > 0:
+			Boulet_VS = Boulet / PrecinctVotes
+			Guillory_VS = Guillory / PrecinctVotes
+			if Boulet > Guillory:
+				WinVote = Boulet
+				Winner_num = 1
+				Winner_name = "Monique Blanco Boulet"
+				precincts[Precinct] = "Monique Blanco Boulet"
+			elif Guillory > Boulet:
+				WinVote = Guillory
+				Winner_num = 3
+				Winner_name = "Josh Guillory"
+				precincts[Precinct] = "Josh Guillory"
+			elif Boulet == Guillory:
+				Winner_num = 2
+				Winner_name = "Tie" 
+				precincts[Precinct] = "Tie"
 
-			#Add precinct result to PRECINCT array
-			rows.append({"ID": ID,
-					"Parish": Parish,
-					"Ward": Ward,
-					"Precinct": Precinct,
-					"Boulet": Boulet,
-					"Guillory": Guillory,
-					"Total": PrecinctVotes,
-					"Boulet_VS": Boulet_VS,
-					"Guillory_VS": Guillory_VS,
-					"Winner_num": Winner_num,
-					"Winner_name": Winner_name})
-					
+		#Add precinct result to PRECINCT array
+		rows.append({"ID": ID,
+				"Parish": Parish,
+				"Ward": Ward,
+				"Precinct": Precinct,
+				"Boulet": Boulet,
+				"Guillory": Guillory,
+				"Total": PrecinctVotes,
+				"Boulet_VS": Boulet_VS,
+				"Guillory_VS": Guillory_VS,
+				"Winner_num": Winner_num,
+				"Winner_name": Winner_name})
+				
 # Write PRECINCT array to PRECINCT dataframe, then PRECINCT csv					
 Nov_MP_precincts_df = pd.DataFrame(rows, columns=cols)
 Nov_MP_precincts_df.to_csv('Nov_MP_Precinct_results.csv')
 
+
+# Calculate SWING precinct results and print to terminal
+Boulet_Swings = 0
+Guillory_Swings = 0
+swingers_reporting = 0
+for a in swing_numbers:
+	if precincts[a] == "Monique Blanco Boulet":
+		Boulet_Swings +=  1
+		swingers_reporting += 1
+	elif precincts[a] == "Josh Guillory":
+		Guillory_Swings +=  1
+		swingers_reporting += 1
+	elif precincts[a] == "Tie":
+		swingers_reporting += 1
+	print("Precinct", a, ":", precincts[a])
+print(swingers_reporting, "out of 8 swing precincts in:" , Boulet_Swings, "for Boulet,", Guillory_Swings, 
+	"for Guillory.")
+
 # Determine Parishwide voteshares
 TotalVotes = Boulet_Tot + Guillory_Tot
 if TotalVotes > 0:
-    Boulet_VS = (Boulet_Tot / TotalVotes) * 100
-    Guillory_VS = (Guillory_Tot / TotalVotes) * 100
+	Boulet_VS = (Boulet_Tot / TotalVotes) * 100
+	Guillory_VS = (Guillory_Tot / TotalVotes) * 100
 
 # Add parishwide results to TOTALS array
 total_rows.append({"Candidate": "Monique Blanco Boulet",
