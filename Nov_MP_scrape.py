@@ -40,6 +40,9 @@ precincts_total = 134
 precincts_reporting = 0
 early_voting = "not included."
 
+city_reporting = 0
+city_list = [42,23,97,77,17,9,88,54,62,20,12,89,67,10,39,38,31,53,40,7,16,45,72,78,109,86,52,41,70,66,76,18,69,60,59,74,47,33,104,113,44,43,6,112,32,56,63,64,57,24,15,13,105,87,117,55,25,98,81,91,121,49,75,95,85,14,83,90,84,96,92,61,19,68,51,22,94,80,120,11,21,34,48,46,65,58,82,93,73,115,79,30,127,126,125,128]
+
 # Prepping SWING precincts array for print() reporting
 i = 0
 precincts = []
@@ -92,6 +95,8 @@ for x in Race:
 		# Check for precinct reporting and Early Voting status
 		if PrecinctVotes > 0 and Ward != "Early Voting":
 			precincts_reporting = precincts_reporting + 1
+			if Precinct in city_list:
+				city_reporting += 1
 		
 		# Reset precinct winner
 		WinVote = 0
@@ -174,7 +179,7 @@ total_rows.append({"Candidate": "Josh Guillory",
 Nov_MP_totals_df = pd.DataFrame(total_rows, columns=total_cols)
 Nov_MP_totals_df.to_csv('Nov_MP_Totals_results.csv')
 
-# Create metadata json file
+# Create PARISHWIDE metadata json file
 notes = notes + "with " + str(precincts_reporting) + " out of " + str(precincts_total) + " precincts reporting. Early voting " + early_voting
 dictionary = {
 	"annotate" : {
@@ -183,4 +188,16 @@ dictionary = {
 }
 json_object = json.dumps(dictionary, indent=4)
 with open('Nov_MP_metadata.json', "w") as outfile:
+	outfile.write(json_object)
+
+
+# Create CITY metadata json file
+city_notes = pretty_time + "with " + str(precincts_reporting) + " out of 96 precincts reporting."
+dictionary = {
+	"annotate" : {
+		"notes" : city_notes
+	}
+}
+json_object = json.dumps(dictionary, indent=4)
+with open('Nov_MP_CITY_metadata.json', "w") as outfile:
 	outfile.write(json_object)
