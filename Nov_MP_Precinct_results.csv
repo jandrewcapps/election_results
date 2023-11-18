@@ -1,8 +1,8 @@
 ,ID,Parish,Ward,Precinct,Boulet,Guillory,Total,Boulet_VS,Guillory_VS,Winner_num,Winner_name,Runoff_winner,Flipped_to
-0,Lafayette Mayor-President,28,00,1,0,0,0,0,0,0,Not yet reporting,Josh Guillory,Not yet reporting
-1,Lafayette Mayor-President,28,00,2,0,0,0,0,0,0,Not yet reporting,Josh Guillory,Not yet reporting
+0,Lafayette Mayor-President,28,00,1,0,0,0,0,0,0,Not yet reporting,Josh Guillory,Did not flip
+1,Lafayette Mayor-President,28,00,2,0,0,0,0,0,0,Not yet reporting,Josh Guillory,Monique Blanco Boulet
 2,Lafayette Mayor-President,28,00,3,0,0,0,0,0,0,Not yet reporting,Josh Guillory,Not yet reporting
-3,Lafayette Mayor-President,28,00,4,0,0,0,0,0,0,Not yet reporting,Monique Blanco Boulet,Not yet reporting
+3,Lafayette Mayor-President,28,00,4,0,0,0,0,0,0,Not yet reporting,Monique Blanco Boulet,Josh Guillory
 4,Lafayette Mayor-President,28,00,5,0,0,0,0,0,0,Not yet reporting,Monique Blanco Boulet,Not yet reporting
 5,Lafayette Mayor-President,28,00,6,0,0,0,0,0,0,Not yet reporting,Josh Guillory,Not yet reporting
 6,Lafayette Mayor-President,28,00,7,0,0,0,0,0,0,Not yet reporting,Monique Blanco Boulet,Not yet reporting
