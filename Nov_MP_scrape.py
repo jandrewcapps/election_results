@@ -53,8 +53,11 @@ swing_numbers = [32, 41, 48, 75, 77, 92, 113, 123]
 for a in swing_numbers:
 	precincts[a] = "Not reporting"
 
+runoff = ["No Precinct 0","Josh Guillory","Josh Guillory","Josh Guillory","Monique Blanco Boulet","Monique Blanco Boulet","Josh Guillory","Monique Blanco Boulet","Monique Blanco Boulet","Monique Blanco Boulet","Josh Guillory","Monique Blanco Boulet","Monique Blanco Boulet","Monique Blanco Boulet","Monique Blanco Boulet","Monique Blanco Boulet","Monique Blanco Boulet","Monique Blanco Boulet","Monique Blanco Boulet","Monique Blanco Boulet","Monique Blanco Boulet","Monique Blanco Boulet","Monique Blanco Boulet","Monique Blanco Boulet","Monique Blanco Boulet","Josh Guillory","Monique Blanco Boulet","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Jan Swift","Monique Blanco Boulet","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","No Precinct 50","Jan Swift","Monique Blanco Boulet","Monique Blanco Boulet","Monique Blanco Boulet","Monique Blanco Boulet","Monique Blanco Boulet","Monique Blanco Boulet","Monique Blanco Boulet","Monique Blanco Boulet","Monique Blanco Boulet","Monique Blanco Boulet","Monique Blanco Boulet","Monique Blanco Boulet","Monique Blanco Boulet","Josh Guillory","Monique Blanco Boulet","Monique Blanco Boulet","Josh Guillory","Monique Blanco Boulet","Jan Swift","Jan Swift","Josh Guillory","Jan Swift","Monique Blanco Boulet","Jan Swift","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Jan Swift","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Monique Blanco Boulet","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","No Precinct 132","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory","Josh Guillory"]
+
+
 # Prepping PRECINCTS for pandas dataframe
-cols = ["ID", "Parish", "Ward", "Precinct", "Boulet", "Guillory", "Total", "Boulet_VS", "Guillory_VS", "Winner_num", "Winner_name"]
+cols = ["ID", "Parish", "Ward", "Precinct", "Boulet", "Guillory", "Total", "Boulet_VS", "Guillory_VS", "Winner_num", "Winner_name","Runoff_winner","Flipped_to"]
 rows = []
 
 # Prepping TOTALS for pandas dataframe
@@ -72,6 +75,8 @@ for x in Race:
 		Precinct = x.getAttribute("Precinct")
 		if Precinct != '':
 			Precinct = int(Precinct)
+		elif Precinct == '':
+			Precinct = 0
 			#Gather precinct & race ID info
 			
 		Boulet = Guillory = 0
@@ -100,8 +105,9 @@ for x in Race:
 		
 		# Reset precinct winner
 		WinVote = 0
-		Winner_name = ""
+		Winner_name = "-"
 		Winner_num = 0
+		flipped = "-"
 		
 		# Determine new precinct winner or not reporting
 		Boulet_VS = 0
@@ -125,6 +131,11 @@ for x in Race:
 				Winner_num = 2
 				Winner_name = "Tie" 
 				precincts[Precinct] = "Tie"
+				
+			if Winner_name == runoff[int(Precinct)]:
+				flipped = "Did not flip"
+			else: 
+				flipped = "Flipped from " + runoff[Precinct] + " to " + Winner_name
 
 		#Add precinct result to PRECINCT array
 		rows.append({"ID": ID,
@@ -137,7 +148,9 @@ for x in Race:
 				"Boulet_VS": Boulet_VS,
 				"Guillory_VS": Guillory_VS,
 				"Winner_num": Winner_num,
-				"Winner_name": Winner_name})
+				"Winner_name": Winner_name,
+				"Runoff_winner": runoff[int(Precinct)],
+				"Flipped_to": flipped})
 				
 # Write PRECINCT array to PRECINCT dataframe, then PRECINCT csv					
 Nov_MP_precincts_df = pd.DataFrame(rows, columns=cols)
