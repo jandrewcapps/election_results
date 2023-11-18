@@ -107,7 +107,7 @@ for x in Race:
 		WinVote = 0
 		Winner_name = "-"
 		Winner_num = 0
-		flipped = "-"
+		flipped = "Not yet reporting"
 		
 		# Determine new precinct winner or not reporting
 		Boulet_VS = 0
