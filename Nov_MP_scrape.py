@@ -187,6 +187,7 @@ total_rows.append({"Candidate": "Monique Blanco Boulet",
 total_rows.append({"Candidate": "Josh Guillory",
 		"Votes": Guillory_Tot,
 		"Voteshare": Guillory_VS})
+print(str(precincts_reporting) + " of 134 precincts in. Boulet at " + str(Boulet_VS) + " and Guillory at " + str(Guillory_VS))
 
 # Write TOTALS array to TOTALS dataframe, then TOTALS csv
 Nov_MP_totals_df = pd.DataFrame(total_rows, columns=total_cols)
