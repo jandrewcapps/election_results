@@ -102,6 +102,8 @@ for x in Race:
 			precincts_reporting = precincts_reporting + 1
 			if Precinct in city_list:
 				city_reporting += 1
+		if PrecinctVotes > 0 and Ward == "Early Voting":
+			early_voting = "included."
 		
 		# Reset precinct winner
 		WinVote = 0
