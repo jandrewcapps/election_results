@@ -1,15 +1,15 @@
 ,ID,Parish,Ward,Precinct,Boulet,Guillory,Total,Boulet_VS,Guillory_VS,Winner_num,Winner_name,Runoff_winner,Flipped_to
 0,Lafayette Mayor-President,28,00,1,156,182,338,0.46153846153846156,0.5384615384615384,3,Josh Guillory,Josh Guillory,Did not flip
-1,Lafayette Mayor-President,28,00,2,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
+1,Lafayette Mayor-President,28,00,2,122,142,264,0.4621212121212121,0.5378787878787878,3,Josh Guillory,Josh Guillory,Did not flip
 2,Lafayette Mayor-President,28,00,3,102,148,250,0.408,0.592,3,Josh Guillory,Josh Guillory,Did not flip
-3,Lafayette Mayor-President,28,00,4,0,0,0,0.0,0.0,0,Not yet reporting,Monique Blanco Boulet,Not yet reporting
-4,Lafayette Mayor-President,28,00,5,0,0,0,0.0,0.0,0,Not yet reporting,Monique Blanco Boulet,Not yet reporting
+3,Lafayette Mayor-President,28,00,4,189,153,342,0.5526315789473685,0.4473684210526316,1,Monique Blanco Boulet,Monique Blanco Boulet,Did not flip
+4,Lafayette Mayor-President,28,00,5,120,49,169,0.7100591715976331,0.28994082840236685,1,Monique Blanco Boulet,Monique Blanco Boulet,Did not flip
 5,Lafayette Mayor-President,28,00,6,246,234,480,0.5125,0.4875,1,Monique Blanco Boulet,Josh Guillory,Flipped to Monique Blanco Boulet
-6,Lafayette Mayor-President,28,00,7,0,0,0,0.0,0.0,0,Not yet reporting,Monique Blanco Boulet,Not yet reporting
-7,Lafayette Mayor-President,28,00,8,0,0,0,0.0,0.0,0,Not yet reporting,Monique Blanco Boulet,Not yet reporting
+6,Lafayette Mayor-President,28,00,7,244,127,371,0.6576819407008087,0.3423180592991914,1,Monique Blanco Boulet,Monique Blanco Boulet,Did not flip
+7,Lafayette Mayor-President,28,00,8,147,107,254,0.5787401574803149,0.421259842519685,1,Monique Blanco Boulet,Monique Blanco Boulet,Did not flip
 8,Lafayette Mayor-President,28,00,9,0,0,0,0.0,0.0,0,Not yet reporting,Monique Blanco Boulet,Not yet reporting
-9,Lafayette Mayor-President,28,00,10,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
-10,Lafayette Mayor-President,28,00,11,0,0,0,0.0,0.0,0,Not yet reporting,Monique Blanco Boulet,Not yet reporting
+9,Lafayette Mayor-President,28,00,10,66,79,145,0.45517241379310347,0.5448275862068965,3,Josh Guillory,Josh Guillory,Did not flip
+10,Lafayette Mayor-President,28,00,11,203,110,313,0.6485623003194888,0.3514376996805112,1,Monique Blanco Boulet,Monique Blanco Boulet,Did not flip
 11,Lafayette Mayor-President,28,00,12,143,90,233,0.6137339055793991,0.38626609442060084,1,Monique Blanco Boulet,Monique Blanco Boulet,Did not flip
 12,Lafayette Mayor-President,28,00,13,152,89,241,0.6307053941908713,0.36929460580912865,1,Monique Blanco Boulet,Monique Blanco Boulet,Did not flip
 13,Lafayette Mayor-President,28,00,14,114,42,156,0.7307692307692307,0.2692307692307692,1,Monique Blanco Boulet,Monique Blanco Boulet,Did not flip
@@ -30,22 +30,22 @@
 28,Lafayette Mayor-President,28,00,29,97,141,238,0.40756302521008403,0.592436974789916,3,Josh Guillory,Josh Guillory,Did not flip
 29,Lafayette Mayor-President,28,00,30,88,103,191,0.4607329842931937,0.5392670157068062,3,Josh Guillory,Josh Guillory,Did not flip
 30,Lafayette Mayor-President,28,00,31,119,146,265,0.4490566037735849,0.5509433962264151,3,Josh Guillory,Josh Guillory,Did not flip
-31,Lafayette Mayor-President,28,00,32,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
+31,Lafayette Mayor-President,28,00,32,173,156,329,0.5258358662613982,0.47416413373860183,1,Monique Blanco Boulet,Josh Guillory,Flipped to Monique Blanco Boulet
 32,Lafayette Mayor-President,28,00,33,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
-33,Lafayette Mayor-President,28,00,34,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
-34,Lafayette Mayor-President,28,00,35,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
-35,Lafayette Mayor-President,28,00,36,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
-36,Lafayette Mayor-President,28,00,37,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
+33,Lafayette Mayor-President,28,00,34,151,202,353,0.42776203966005666,0.5722379603399433,3,Josh Guillory,Josh Guillory,Did not flip
+34,Lafayette Mayor-President,28,00,35,78,141,219,0.3561643835616438,0.6438356164383562,3,Josh Guillory,Josh Guillory,Did not flip
+35,Lafayette Mayor-President,28,00,36,203,248,451,0.4501108647450111,0.549889135254989,3,Josh Guillory,Josh Guillory,Did not flip
+36,Lafayette Mayor-President,28,00,37,163,232,395,0.41265822784810124,0.5873417721518988,3,Josh Guillory,Josh Guillory,Did not flip
 37,Lafayette Mayor-President,28,00,38,175,118,293,0.5972696245733788,0.40273037542662116,1,Monique Blanco Boulet,Jan Swift,Flipped to Monique Blanco Boulet
 38,Lafayette Mayor-President,28,00,39,0,0,0,0.0,0.0,0,Not yet reporting,Monique Blanco Boulet,Not yet reporting
-39,Lafayette Mayor-President,28,00,40,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
+39,Lafayette Mayor-President,28,00,40,80,72,152,0.5263157894736842,0.47368421052631576,1,Monique Blanco Boulet,Josh Guillory,Flipped to Monique Blanco Boulet
 40,Lafayette Mayor-President,28,00,41,92,84,176,0.5227272727272727,0.4772727272727273,1,Monique Blanco Boulet,Josh Guillory,Flipped to Monique Blanco Boulet
 41,Lafayette Mayor-President,28,00,42,115,85,200,0.575,0.425,1,Monique Blanco Boulet,Josh Guillory,Flipped to Monique Blanco Boulet
-42,Lafayette Mayor-President,28,00,43,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
-43,Lafayette Mayor-President,28,00,44,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
+42,Lafayette Mayor-President,28,00,43,73,96,169,0.4319526627218935,0.5680473372781065,3,Josh Guillory,Josh Guillory,Did not flip
+43,Lafayette Mayor-President,28,00,44,59,64,123,0.4796747967479675,0.5203252032520326,3,Josh Guillory,Josh Guillory,Did not flip
 44,Lafayette Mayor-President,28,00,45,84,93,177,0.4745762711864407,0.5254237288135594,3,Josh Guillory,Josh Guillory,Did not flip
 45,Lafayette Mayor-President,28,00,46,70,59,129,0.5426356589147286,0.4573643410852713,1,Monique Blanco Boulet,Josh Guillory,Flipped to Monique Blanco Boulet
-46,Lafayette Mayor-President,28,00,47,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
+46,Lafayette Mayor-President,28,00,47,123,118,241,0.5103734439834025,0.4896265560165975,1,Monique Blanco Boulet,Josh Guillory,Flipped to Monique Blanco Boulet
 47,Lafayette Mayor-President,28,00,48,107,70,177,0.6045197740112994,0.3954802259887006,1,Monique Blanco Boulet,Josh Guillory,Flipped to Monique Blanco Boulet
 48,Lafayette Mayor-President,28,00,49,251,136,387,0.648578811369509,0.35142118863049093,1,Monique Blanco Boulet,Jan Swift,Flipped to Monique Blanco Boulet
 49,Lafayette Mayor-President,28,00,51,0,0,0,0.0,0.0,0,Not yet reporting,Monique Blanco Boulet,Not yet reporting
@@ -54,10 +54,10 @@
 52,Lafayette Mayor-President,28,00,54,103,7,110,0.9363636363636364,0.06363636363636363,1,Monique Blanco Boulet,Monique Blanco Boulet,Did not flip
 53,Lafayette Mayor-President,28,00,55,174,51,225,0.7733333333333333,0.22666666666666666,1,Monique Blanco Boulet,Monique Blanco Boulet,Did not flip
 54,Lafayette Mayor-President,28,00,56,170,7,177,0.96045197740113,0.03954802259887006,1,Monique Blanco Boulet,Monique Blanco Boulet,Did not flip
-55,Lafayette Mayor-President,28,00,57,0,0,0,0.0,0.0,0,Not yet reporting,Monique Blanco Boulet,Not yet reporting
+55,Lafayette Mayor-President,28,00,57,125,14,139,0.8992805755395683,0.10071942446043165,1,Monique Blanco Boulet,Monique Blanco Boulet,Did not flip
 56,Lafayette Mayor-President,28,00,58,83,1,84,0.9880952380952381,0.011904761904761904,1,Monique Blanco Boulet,Monique Blanco Boulet,Did not flip
-57,Lafayette Mayor-President,28,00,59,0,0,0,0.0,0.0,0,Not yet reporting,Monique Blanco Boulet,Not yet reporting
-58,Lafayette Mayor-President,28,00,60,0,0,0,0.0,0.0,0,Not yet reporting,Monique Blanco Boulet,Not yet reporting
+57,Lafayette Mayor-President,28,00,59,79,72,151,0.5231788079470199,0.4768211920529801,1,Monique Blanco Boulet,Monique Blanco Boulet,Did not flip
+58,Lafayette Mayor-President,28,00,60,87,48,135,0.6444444444444445,0.35555555555555557,1,Monique Blanco Boulet,Monique Blanco Boulet,Did not flip
 59,Lafayette Mayor-President,28,00,61,54,4,58,0.9310344827586207,0.06896551724137931,1,Monique Blanco Boulet,Monique Blanco Boulet,Did not flip
 60,Lafayette Mayor-President,28,00,62,38,2,40,0.95,0.05,1,Monique Blanco Boulet,Monique Blanco Boulet,Did not flip
 61,Lafayette Mayor-President,28,00,63,85,24,109,0.7798165137614679,0.22018348623853212,1,Monique Blanco Boulet,Monique Blanco Boulet,Did not flip
@@ -68,43 +68,43 @@
 66,Lafayette Mayor-President,28,00,68,97,20,117,0.8290598290598291,0.17094017094017094,1,Monique Blanco Boulet,Monique Blanco Boulet,Did not flip
 67,Lafayette Mayor-President,28,00,69,125,37,162,0.7716049382716049,0.22839506172839505,1,Monique Blanco Boulet,Jan Swift,Flipped to Monique Blanco Boulet
 68,Lafayette Mayor-President,28,00,70,141,57,198,0.7121212121212122,0.2878787878787879,1,Monique Blanco Boulet,Jan Swift,Flipped to Monique Blanco Boulet
-69,Lafayette Mayor-President,28,00,71,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
+69,Lafayette Mayor-President,28,00,71,95,114,209,0.45454545454545453,0.5454545454545454,3,Josh Guillory,Josh Guillory,Did not flip
 70,Lafayette Mayor-President,28,00,72,45,18,63,0.7142857142857143,0.2857142857142857,1,Monique Blanco Boulet,Jan Swift,Flipped to Monique Blanco Boulet
 71,Lafayette Mayor-President,28,00,73,103,72,175,0.5885714285714285,0.4114285714285714,1,Monique Blanco Boulet,Monique Blanco Boulet,Did not flip
 72,Lafayette Mayor-President,28,00,74,131,68,199,0.6582914572864321,0.3417085427135678,1,Monique Blanco Boulet,Jan Swift,Flipped to Monique Blanco Boulet
 73,Lafayette Mayor-President,28,00,75,80,50,130,0.6153846153846154,0.38461538461538464,1,Monique Blanco Boulet,Josh Guillory,Flipped to Monique Blanco Boulet
 74,Lafayette Mayor-President,28,00,76,128,124,252,0.5079365079365079,0.49206349206349204,1,Monique Blanco Boulet,Josh Guillory,Flipped to Monique Blanco Boulet
 75,Lafayette Mayor-President,28,00,77,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
-76,Lafayette Mayor-President,28,00,78,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
-77,Lafayette Mayor-President,28,00,79,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
+76,Lafayette Mayor-President,28,00,78,203,231,434,0.46774193548387094,0.532258064516129,3,Josh Guillory,Josh Guillory,Did not flip
+77,Lafayette Mayor-President,28,00,79,93,156,249,0.37349397590361444,0.6265060240963856,3,Josh Guillory,Josh Guillory,Did not flip
 78,Lafayette Mayor-President,28,00,80,98,154,252,0.3888888888888889,0.6111111111111112,3,Josh Guillory,Josh Guillory,Did not flip
 79,Lafayette Mayor-President,28,00,81,65,71,136,0.47794117647058826,0.5220588235294118,3,Josh Guillory,Josh Guillory,Did not flip
 80,Lafayette Mayor-President,28,00,82,181,131,312,0.5801282051282052,0.4198717948717949,1,Monique Blanco Boulet,Josh Guillory,Flipped to Monique Blanco Boulet
 81,Lafayette Mayor-President,28,00,83,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
-82,Lafayette Mayor-President,28,00,84,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
-83,Lafayette Mayor-President,28,00,85,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
+82,Lafayette Mayor-President,28,00,84,150,199,349,0.4297994269340974,0.5702005730659025,3,Josh Guillory,Josh Guillory,Did not flip
+83,Lafayette Mayor-President,28,00,85,119,212,331,0.3595166163141994,0.6404833836858006,3,Josh Guillory,Josh Guillory,Did not flip
 84,Lafayette Mayor-President,28,00,86,98,176,274,0.35766423357664234,0.6423357664233577,3,Josh Guillory,Josh Guillory,Did not flip
 85,Lafayette Mayor-President,28,00,87,133,214,347,0.38328530259365995,0.6167146974063401,3,Josh Guillory,Josh Guillory,Did not flip
 86,Lafayette Mayor-President,28,00,88,106,140,246,0.43089430894308944,0.5691056910569106,3,Josh Guillory,Josh Guillory,Did not flip
 87,Lafayette Mayor-President,28,00,89,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
 88,Lafayette Mayor-President,28,00,90,94,96,190,0.49473684210526314,0.5052631578947369,3,Josh Guillory,Jan Swift,Flipped to Josh Guillory
 89,Lafayette Mayor-President,28,00,91,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
-90,Lafayette Mayor-President,28,00,92,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
+90,Lafayette Mayor-President,28,00,92,161,121,282,0.5709219858156028,0.42907801418439717,1,Monique Blanco Boulet,Josh Guillory,Flipped to Monique Blanco Boulet
 91,Lafayette Mayor-President,28,00,93,70,74,144,0.4861111111111111,0.5138888888888888,3,Josh Guillory,Josh Guillory,Did not flip
 92,Lafayette Mayor-President,28,00,94,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
 93,Lafayette Mayor-President,28,00,95,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
-94,Lafayette Mayor-President,28,00,96,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
+94,Lafayette Mayor-President,28,00,96,80,101,181,0.4419889502762431,0.5580110497237569,3,Josh Guillory,Josh Guillory,Did not flip
 95,Lafayette Mayor-President,28,00,97,31,40,71,0.43661971830985913,0.5633802816901409,3,Josh Guillory,Josh Guillory,Did not flip
-96,Lafayette Mayor-President,28,00,98,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
+96,Lafayette Mayor-President,28,00,98,109,160,269,0.4052044609665427,0.5947955390334573,3,Josh Guillory,Josh Guillory,Did not flip
 97,Lafayette Mayor-President,28,00,99,0,0,0,0.0,0.0,0,Not yet reporting,Monique Blanco Boulet,Not yet reporting
 98,Lafayette Mayor-President,28,00,100,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
 99,Lafayette Mayor-President,28,00,101,63,127,190,0.33157894736842103,0.6684210526315789,3,Josh Guillory,Josh Guillory,Did not flip
 100,Lafayette Mayor-President,28,00,102,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
-101,Lafayette Mayor-President,28,00,103,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
+101,Lafayette Mayor-President,28,00,103,54,94,148,0.36486486486486486,0.6351351351351351,3,Josh Guillory,Josh Guillory,Did not flip
 102,Lafayette Mayor-President,28,00,104,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
 103,Lafayette Mayor-President,28,00,105,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
 104,Lafayette Mayor-President,28,00,106,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
-105,Lafayette Mayor-President,28,00,107,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
+105,Lafayette Mayor-President,28,00,107,112,218,330,0.3393939393939394,0.6606060606060606,3,Josh Guillory,Josh Guillory,Did not flip
 106,Lafayette Mayor-President,28,00,108,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
 107,Lafayette Mayor-President,28,00,109,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
 108,Lafayette Mayor-President,28,00,110,111,181,292,0.3801369863013699,0.6198630136986302,3,Josh Guillory,Josh Guillory,Did not flip
@@ -112,23 +112,23 @@
 110,Lafayette Mayor-President,28,00,112,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
 111,Lafayette Mayor-President,28,00,113,108,85,193,0.5595854922279793,0.44041450777202074,1,Monique Blanco Boulet,Josh Guillory,Flipped to Monique Blanco Boulet
 112,Lafayette Mayor-President,28,00,114,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
-113,Lafayette Mayor-President,28,00,115,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
+113,Lafayette Mayor-President,28,00,115,75,112,187,0.40106951871657753,0.5989304812834224,3,Josh Guillory,Josh Guillory,Did not flip
 114,Lafayette Mayor-President,28,00,116,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
 115,Lafayette Mayor-President,28,00,117,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
 116,Lafayette Mayor-President,28,00,118,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
 117,Lafayette Mayor-President,28,00,119,66,115,181,0.36464088397790057,0.6353591160220995,3,Josh Guillory,Josh Guillory,Did not flip
-118,Lafayette Mayor-President,28,00,120,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
+118,Lafayette Mayor-President,28,00,120,168,193,361,0.46537396121883656,0.5346260387811634,3,Josh Guillory,Josh Guillory,Did not flip
 119,Lafayette Mayor-President,28,00,121,105,157,262,0.40076335877862596,0.5992366412213741,3,Josh Guillory,Josh Guillory,Did not flip
 120,Lafayette Mayor-President,28,00,122,86,149,235,0.3659574468085106,0.6340425531914894,3,Josh Guillory,Josh Guillory,Did not flip
-121,Lafayette Mayor-President,28,00,123,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
+121,Lafayette Mayor-President,28,00,123,120,120,240,0.5,0.5,2,Tie,Josh Guillory,Flipped to Tie
 122,Lafayette Mayor-President,28,00,124,120,193,313,0.38338658146964855,0.6166134185303515,3,Josh Guillory,Josh Guillory,Did not flip
 123,Lafayette Mayor-President,28,00,125,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
 124,Lafayette Mayor-President,28,00,126,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
 125,Lafayette Mayor-President,28,00,127,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
-126,Lafayette Mayor-President,28,00,128,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
-127,Lafayette Mayor-President,28,00,129,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
+126,Lafayette Mayor-President,28,00,128,85,119,204,0.4166666666666667,0.5833333333333334,3,Josh Guillory,Josh Guillory,Did not flip
+127,Lafayette Mayor-President,28,00,129,13,46,59,0.22033898305084745,0.7796610169491526,3,Josh Guillory,Josh Guillory,Did not flip
 128,Lafayette Mayor-President,28,00,130,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
-129,Lafayette Mayor-President,28,00,131,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
+129,Lafayette Mayor-President,28,00,131,0,3,3,0.0,1.0,3,Josh Guillory,Josh Guillory,Did not flip
 130,Lafayette Mayor-President,28,00,133,44,125,169,0.2603550295857988,0.7396449704142012,3,Josh Guillory,Josh Guillory,Did not flip
 131,Lafayette Mayor-President,28,00,134,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
 132,Lafayette Mayor-President,28,00,135,0,0,0,0.0,0.0,0,Not yet reporting,Josh Guillory,Not yet reporting
