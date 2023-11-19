@@ -137,7 +137,7 @@ for x in Race:
 			if Winner_name == runoff[int(Precinct)]:
 				flipped = "Did not flip"
 			else: 
-				flipped = "Flipped from " + runoff[Precinct] + " to " + Winner_name
+				flipped = "Flipped to " + Winner_name
 
 		#Add precinct result to PRECINCT array
 		rows.append({"ID": ID,
